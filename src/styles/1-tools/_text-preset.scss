@@ -1,0 +1,323 @@
+// Regular
+@mixin regular-100 {
+  font-family: var(--regular-100-ff);
+  font-size: var(--regular-100-fs);
+  font-weight: var(--regular-100-fw);
+  line-height: var(--regular-100-lh);
+  letter-spacing: var(--regular-100-ls);
+}
+
+@mixin regular-200 {
+  font-family: var(--regular-200-ff);
+  font-size: var(--regular-200-fs);
+  font-weight: var(--regular-200-fw);
+  line-height: var(--regular-200-lh);
+  letter-spacing: var(--regular-200-ls);
+}
+
+@mixin regular-300 {
+  font-family: var(--regular-300-ff);
+  font-size: var(--regular-300-fs);
+  font-weight: var(--regular-300-fw);
+  line-height: var(--regular-300-lh);
+  letter-spacing: var(--regular-300-ls);
+}
+
+@mixin regular-400 {
+  font-family: var(--regular-400-ff);
+  font-size: var(--regular-400-fs);
+  font-weight: var(--regular-400-fw);
+  line-height: var(--regular-400-lh);
+  letter-spacing: var(--regular-400-ls);
+}
+
+@mixin regular-500 {
+  font-family: var(--regular-500-ff);
+  font-size: var(--regular-500-fs);
+  font-weight: var(--regular-500-fw);
+  line-height: var(--regular-500-lh);
+  letter-spacing: var(--regular-500-ls);
+}
+
+@mixin regular-600 {
+  font-family: var(--regular-600-ff);
+  font-size: var(--regular-600-fs);
+  font-weight: var(--regular-600-fw);
+  line-height: var(--regular-600-lh);
+  letter-spacing: var(--regular-600-ls);
+}
+
+@mixin regular-700 {
+  font-family: var(--regular-700-ff);
+  font-size: var(--regular-700-fs);
+  font-weight: var(--regular-700-fw);
+  line-height: var(--regular-700-lh);
+  letter-spacing: var(--regular-700-ls);
+}
+
+@mixin regular-800 {
+  font-family: var(--regular-800-ff);
+  font-size: var(--regular-800-fs);
+  font-weight: var(--regular-800-fw);
+  line-height: var(--regular-800-lh);
+  letter-spacing: var(--regular-800-ls);
+}
+
+@mixin regular-900 {
+  font-family: var(--regular-900-ff);
+  font-size: var(--regular-900-fs);
+  font-weight: var(--regular-900-fw);
+  line-height: var(--regular-900-lh);
+  letter-spacing: var(--regular-900-ls);
+}
+
+@mixin regular-950 {
+  font-family: var(--regular-950-ff);
+  font-size: var(--regular-950-fs);
+  font-weight: var(--regular-950-fw);
+  line-height: var(--regular-950-lh);
+  letter-spacing: var(--regular-950-ls);
+}
+
+// Medium
+@mixin medium-100 {
+  font-family: var(--medium-100-ff);
+  font-size: var(--medium-100-fs);
+  font-weight: var(--medium-100-fw);
+  line-height: var(--medium-100-lh);
+  letter-spacing: var(--medium-100-ls);
+}
+
+@mixin medium-200 {
+  font-family: var(--medium-200-ff);
+  font-size: var(--medium-200-fs);
+  font-weight: var(--medium-200-fw);
+  line-height: var(--medium-200-lh);
+  letter-spacing: var(--medium-200-ls);
+}
+
+@mixin medium-300 {
+  font-family: var(--medium-300-ff);
+  font-size: var(--medium-300-fs);
+  font-weight: var(--medium-300-fw);
+  line-height: var(--medium-300-lh);
+  letter-spacing: var(--medium-300-ls);
+}
+
+@mixin medium-400 {
+  font-family: var(--medium-400-ff);
+  font-size: var(--medium-400-fs);
+  font-weight: var(--medium-400-fw);
+  line-height: var(--medium-400-lh);
+  letter-spacing: var(--medium-400-ls);
+}
+
+@mixin medium-500 {
+  font-family: var(--medium-500-ff);
+  font-size: var(--medium-500-fs);
+  font-weight: var(--medium-500-fw);
+  line-height: var(--medium-500-lh);
+  letter-spacing: var(--medium-500-ls);
+}
+
+@mixin medium-600 {
+  font-family: var(--medium-600-ff);
+  font-size: var(--medium-600-fs);
+  font-weight: var(--medium-600-fw);
+  line-height: var(--medium-600-lh);
+  letter-spacing: var(--medium-600-ls);
+}
+
+@mixin medium-700 {
+  font-family: var(--medium-700-ff);
+  font-size: var(--medium-700-fs);
+  font-weight: var(--medium-700-fw);
+  line-height: var(--medium-700-lh);
+  letter-spacing: var(--medium-700-ls);
+}
+
+@mixin medium-800 {
+  font-family: var(--medium-800-ff);
+  font-size: var(--medium-800-fs);
+  font-weight: var(--medium-800-fw);
+  line-height: var(--medium-800-lh);
+  letter-spacing: var(--medium-800-ls);
+}
+
+@mixin medium-900 {
+  font-family: var(--medium-900-ff);
+  font-size: var(--medium-900-fs);
+  font-weight: var(--medium-900-fw);
+  line-height: var(--medium-900-lh);
+  letter-spacing: var(--medium-900-ls);
+}
+
+@mixin medium-950 {
+  font-family: var(--medium-950-ff);
+  font-size: var(--medium-950-fs);
+  font-weight: var(--medium-950-fw);
+  line-height: var(--medium-950-lh);
+  letter-spacing: var(--medium-950-ls);
+}
+
+// Semibold
+@mixin semibold-100 {
+  font-family: var(--semibold-100-ff);
+  font-size: var(--semibold-100-fs);
+  font-weight: var(--semibold-100-fw);
+  line-height: var(--semibold-100-lh);
+  letter-spacing: var(--semibold-100-ls);
+}
+
+@mixin semibold-200 {
+  font-family: var(--semibold-200-ff);
+  font-size: var(--semibold-200-fs);
+  font-weight: var(--semibold-200-fw);
+  line-height: var(--semibold-200-lh);
+  letter-spacing: var(--semibold-200-ls);
+}
+
+@mixin semibold-300 {
+  font-family: var(--semibold-300-ff);
+  font-size: var(--semibold-300-fs);
+  font-weight: var(--semibold-300-fw);
+  line-height: var(--semibold-300-lh);
+  letter-spacing: var(--semibold-300-ls);
+}
+
+@mixin semibold-400 {
+  font-family: var(--semibold-400-ff);
+  font-size: var(--semibold-400-fs);
+  font-weight: var(--semibold-400-fw);
+  line-height: var(--semibold-400-lh);
+  letter-spacing: var(--semibold-400-ls);
+}
+
+@mixin semibold-500 {
+  font-family: var(--semibold-500-ff);
+  font-size: var(--semibold-500-fs);
+  font-weight: var(--semibold-500-fw);
+  line-height: var(--semibold-500-lh);
+  letter-spacing: var(--semibold-500-ls);
+}
+
+@mixin semibold-600 {
+  font-family: var(--semibold-600-ff);
+  font-size: var(--semibold-600-fs);
+  font-weight: var(--semibold-600-fw);
+  line-height: var(--semibold-600-lh);
+  letter-spacing: var(--semibold-600-ls);
+}
+
+@mixin semibold-700 {
+  font-family: var(--semibold-700-ff);
+  font-size: var(--semibold-700-fs);
+  font-weight: var(--semibold-700-fw);
+  line-height: var(--semibold-700-lh);
+  letter-spacing: var(--semibold-700-ls);
+}
+
+@mixin semibold-800 {
+  font-family: var(--semibold-800-ff);
+  font-size: var(--semibold-800-fs);
+  font-weight: var(--semibold-800-fw);
+  line-height: var(--semibold-800-lh);
+  letter-spacing: var(--semibold-800-ls);
+}
+
+@mixin semibold-900 {
+  font-family: var(--semibold-900-ff);
+  font-size: var(--semibold-900-fs);
+  font-weight: var(--semibold-900-fw);
+  line-height: var(--semibold-900-lh);
+  letter-spacing: var(--semibold-900-ls);
+}
+
+@mixin semibold-950 {
+  font-family: var(--semibold-950-ff);
+  font-size: var(--semibold-950-fs);
+  font-weight: var(--semibold-950-fw);
+  line-height: var(--semibold-950-lh);
+  letter-spacing: var(--semibold-950-ls);
+}
+
+// Bold
+@mixin bold-100 {
+  font-family: var(--bold-100-ff);
+  font-size: var(--bold-100-fs);
+  font-weight: var(--bold-100-fw);
+  line-height: var(--bold-100-lh);
+  letter-spacing: var(--bold-100-ls);
+}
+
+@mixin bold-200 {
+  font-family: var(--bold-200-ff);
+  font-size: var(--bold-200-fs);
+  font-weight: var(--bold-200-fw);
+  line-height: var(--bold-200-lh);
+  letter-spacing: var(--bold-200-ls);
+}
+
+@mixin bold-300 {
+  font-family: var(--bold-300-ff);
+  font-size: var(--bold-300-fs);
+  font-weight: var(--bold-300-fw);
+  line-height: var(--bold-300-lh);
+  letter-spacing: var(--bold-300-ls);
+}
+
+@mixin bold-400 {
+  font-family: var(--bold-400-ff);
+  font-size: var(--bold-400-fs);
+  font-weight: var(--bold-400-fw);
+  line-height: var(--bold-400-lh);
+  letter-spacing: var(--bold-400-ls);
+}
+
+@mixin bold-500 {
+  font-family: var(--bold-500-ff);
+  font-size: var(--bold-500-fs);
+  font-weight: var(--bold-500-fw);
+  line-height: var(--bold-500-lh);
+  letter-spacing: var(--bold-500-ls);
+}
+
+@mixin bold-600 {
+  font-family: var(--bold-600-ff);
+  font-size: var(--bold-600-fs);
+  font-weight: var(--bold-600-fw);
+  line-height: var(--bold-600-lh);
+  letter-spacing: var(--bold-600-ls);
+}
+
+@mixin bold-700 {
+  font-family: var(--bold-700-ff);
+  font-size: var(--bold-700-fs);
+  font-weight: var(--bold-700-fw);
+  line-height: var(--bold-700-lh);
+  letter-spacing: var(--bold-700-ls);
+}
+
+@mixin bold-800 {
+  font-family: var(--bold-800-ff);
+  font-size: var(--bold-800-fs);
+  font-weight: var(--bold-800-fw);
+  line-height: var(--bold-800-lh);
+  letter-spacing: var(--bold-800-ls);
+}
+
+@mixin bold-900 {
+  font-family: var(--bold-900-ff);
+  font-size: var(--bold-900-fs);
+  font-weight: var(--bold-900-fw);
+  line-height: var(--bold-900-lh);
+  letter-spacing: var(--bold-900-ls);
+}
+
+@mixin bold-950 {
+  font-family: var(--bold-950-ff);
+  font-size: var(--bold-950-fs);
+  font-weight: var(--bold-950-fw);
+  line-height: var(--bold-950-lh);
+  letter-spacing: var(--bold-950-ls);
+}

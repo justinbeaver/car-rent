@@ -1,0 +1,17 @@
+html {
+  background-color: var(--clr-secondary-100);
+}
+
+body {
+  // position: relative; // Allows navbar positioning relative to body
+  min-height: 100vh;
+  min-width: var(--app-min-width);
+  max-width: var(--app-max-width);
+  margin-inline: auto;
+  background-color: #f6f7f9;
+  color: var(--clr-secondary-500);
+  font-family: var(--ff-primary);
+  font-size: var(--fs-300);
+  font-weight: var(--fw-regular);
+  line-height: var(--lh-base);
+}

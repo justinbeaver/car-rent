@@ -1,0 +1,267 @@
+:root {
+  --ff-primary: "Plus Jakarta Sans", sans-serif;
+
+  --fs-100: 12px;
+  --fs-200: 14px;
+  --fs-300: 16px;
+  --fs-400: 18px;
+  --fs-500: 20px;
+  --fs-600: 24px;
+  --fs-700: 32px;
+  --fs-800: 36px;
+  --fs-900: 40px;
+  --fs-950: 72px;
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 700;
+  --fw-bold: 900;
+
+  --lh-medium: 1.5;
+
+  --ls-medium: normal;
+
+  // Regular
+  --regular-100-ff: var(--ff-primary);
+  --regular-100-fs: var(--fs-100);
+  --regular-100-fw: var(--fw-regular);
+  --regular-100-lh: var(--lh-medium);
+  --regular-100-ls: var(--ls-medium);
+
+  --regular-200-ff: var(--ff-primary);
+  --regular-200-fs: var(--fs-200);
+  --regular-200-fw: var(--fw-regular);
+  --regular-200-lh: var(--lh-medium);
+  --regular-200-ls: var(--ls-medium);
+
+  --regular-300-ff: var(--ff-primary);
+  --regular-300-fs: var(--fs-300);
+  --regular-300-fw: var(--fw-regular);
+  --regular-300-lh: var(--lh-medium);
+  --regular-300-ls: var(--ls-medium);
+
+  --regular-400-ff: var(--ff-primary);
+  --regular-400-fs: var(--fs-400);
+  --regular-400-fw: var(--fw-regular);
+  --regular-400-lh: var(--lh-medium);
+  --regular-400-ls: var(--ls-medium);
+
+  --regular-500-ff: var(--ff-primary);
+  --regular-500-fs: var(--fs-500);
+  --regular-500-fw: var(--fw-regular);
+  --regular-500-lh: var(--lh-medium);
+  --regular-500-ls: var(--ls-medium);
+
+  --regular-600-ff: var(--ff-primary);
+  --regular-600-fs: var(--fs-600);
+  --regular-600-fw: var(--fw-regular);
+  --regular-600-lh: var(--lh-medium);
+  --regular-600-ls: var(--ls-medium);
+
+  --regular-700-ff: var(--ff-primary);
+  --regular-700-fs: var(--fs-700);
+  --regular-700-fw: var(--fw-regular);
+  --regular-700-lh: var(--lh-medium);
+  --regular-700-ls: var(--ls-medium);
+
+  --regular-800-ff: var(--ff-primary);
+  --regular-800-fs: var(--fs-800);
+  --regular-800-fw: var(--fw-regular);
+  --regular-800-lh: var(--lh-medium);
+  --regular-800-ls: var(--ls-medium);
+
+  --regular-900-ff: var(--ff-primary);
+  --regular-900-fs: var(--fs-900);
+  --regular-900-fw: var(--fw-regular);
+  --regular-900-lh: var(--lh-medium);
+  --regular-900-ls: var(--ls-medium);
+
+  --regular-950-ff: var(--ff-primary);
+  --regular-950-fs: var(--fs-950);
+  --regular-950-fw: var(--fw-regular);
+  --regular-950-lh: var(--lh-medium);
+  --regular-950-ls: var(--ls-medium);
+
+  // Medium
+  --medium-100-ff: var(--ff-primary);
+  --medium-100-fs: var(--fs-100);
+  --medium-100-fw: var(--fw-medium);
+  --medium-100-lh: var(--lh-medium);
+  --medium-100-ls: var(--ls-medium);
+
+  --medium-200-ff: var(--ff-primary);
+  --medium-200-fs: var(--fs-200);
+  --medium-200-fw: var(--fw-medium);
+  --medium-200-lh: var(--lh-medium);
+  --medium-200-ls: var(--ls-medium);
+
+  --medium-300-ff: var(--ff-primary);
+  --medium-300-fs: var(--fs-300);
+  --medium-300-fw: var(--fw-medium);
+  --medium-300-lh: var(--lh-medium);
+  --medium-300-ls: var(--ls-medium);
+
+  --medium-400-ff: var(--ff-primary);
+  --medium-400-fs: var(--fs-400);
+  --medium-400-fw: var(--fw-medium);
+  --medium-400-lh: var(--lh-medium);
+  --medium-400-ls: var(--ls-medium);
+
+  --medium-500-ff: var(--ff-primary);
+  --medium-500-fs: var(--fs-500);
+  --medium-500-fw: var(--fw-medium);
+  --medium-500-lh: var(--lh-medium);
+  --medium-500-ls: var(--ls-medium);
+
+  --medium-600-ff: var(--ff-primary);
+  --medium-600-fs: var(--fs-600);
+  --medium-600-fw: var(--fw-medium);
+  --medium-600-lh: var(--lh-medium);
+  --medium-600-ls: var(--ls-medium);
+
+  --medium-700-ff: var(--ff-primary);
+  --medium-700-fs: var(--fs-700);
+  --medium-700-fw: var(--fw-medium);
+  --medium-700-lh: var(--lh-medium);
+  --medium-700-ls: var(--ls-medium);
+
+  --medium-800-ff: var(--ff-primary);
+  --medium-800-fs: var(--fs-800);
+  --medium-800-fw: var(--fw-medium);
+  --medium-800-lh: var(--lh-medium);
+  --medium-800-ls: var(--ls-medium);
+
+  --medium-900-ff: var(--ff-primary);
+  --medium-900-fs: var(--fs-900);
+  --medium-900-fw: var(--fw-medium);
+  --medium-900-lh: var(--lh-medium);
+  --medium-900-ls: var(--ls-medium);
+
+  --medium-950-ff: var(--ff-primary);
+  --medium-950-fs: var(--fs-950);
+  --medium-950-fw: var(--fw-medium);
+  --medium-950-lh: var(--lh-medium);
+  --medium-950-ls: var(--ls-medium);
+
+  // Semibold
+  --semibold-100-ff: var(--ff-primary);
+  --semibold-100-fs: var(--fs-100);
+  --semibold-100-fw: var(--fw-semibold);
+  --semibold-100-lh: var(--lh-medium);
+  --semibold-100-ls: var(--ls-medium);
+
+  --semibold-200-ff: var(--ff-primary);
+  --semibold-200-fs: var(--fs-200);
+  --semibold-200-fw: var(--fw-semibold);
+  --semibold-200-lh: var(--lh-medium);
+  --semibold-200-ls: var(--ls-medium);
+
+  --semibold-300-ff: var(--ff-primary);
+  --semibold-300-fs: var(--fs-300);
+  --semibold-300-fw: var(--fw-semibold);
+  --semibold-300-lh: var(--lh-medium);
+  --semibold-300-ls: var(--ls-medium);
+
+  --semibold-400-ff: var(--ff-primary);
+  --semibold-400-fs: var(--fs-400);
+  --semibold-400-fw: var(--fw-semibold);
+  --semibold-400-lh: var(--lh-medium);
+  --semibold-400-ls: var(--ls-medium);
+
+  --semibold-500-ff: var(--ff-primary);
+  --semibold-500-fs: var(--fs-500);
+  --semibold-500-fw: var(--fw-semibold);
+  --semibold-500-lh: var(--lh-medium);
+  --semibold-500-ls: var(--ls-medium);
+
+  --semibold-600-ff: var(--ff-primary);
+  --semibold-600-fs: var(--fs-600);
+  --semibold-600-fw: var(--fw-semibold);
+  --semibold-600-lh: var(--lh-medium);
+  --semibold-600-ls: var(--ls-medium);
+
+  --semibold-700-ff: var(--ff-primary);
+  --semibold-700-fs: var(--fs-700);
+  --semibold-700-fw: var(--fw-semibold);
+  --semibold-700-lh: var(--lh-medium);
+  --semibold-700-ls: var(--ls-medium);
+
+  --semibold-800-ff: var(--ff-primary);
+  --semibold-800-fs: var(--fs-800);
+  --semibold-800-fw: var(--fw-semibold);
+  --semibold-800-lh: var(--lh-medium);
+  --semibold-800-ls: var(--ls-medium);
+
+  --semibold-900-ff: var(--ff-primary);
+  --semibold-900-fs: var(--fs-900);
+  --semibold-900-fw: var(--fw-semibold);
+  --semibold-900-lh: var(--lh-medium);
+  --semibold-900-ls: var(--ls-medium);
+
+  --semibold-950-ff: var(--ff-primary);
+  --semibold-950-fs: var(--fs-950);
+  --semibold-950-fw: var(--fw-semibold);
+  --semibold-950-lh: var(--lh-medium);
+  --semibold-950-ls: var(--ls-medium);
+
+  // Bold
+  --bold-100-ff: var(--ff-primary);
+  --bold-100-fs: var(--fs-100);
+  --bold-100-fw: var(--fw-bold);
+  --bold-100-lh: var(--lh-medium);
+  --bold-100-ls: var(--ls-medium);
+
+  --bold-200-ff: var(--ff-primary);
+  --bold-200-fs: var(--fs-200);
+  --bold-200-fw: var(--fw-bold);
+  --bold-200-lh: var(--lh-medium);
+  --bold-200-ls: var(--ls-medium);
+
+  --bold-300-ff: var(--ff-primary);
+  --bold-300-fs: var(--fs-300);
+  --bold-300-fw: var(--fw-bold);
+  --bold-300-lh: var(--lh-medium);
+  --bold-300-ls: var(--ls-medium);
+
+  --bold-400-ff: var(--ff-primary);
+  --bold-400-fs: var(--fs-400);
+  --bold-400-fw: var(--fw-bold);
+  --bold-400-lh: var(--lh-medium);
+  --bold-400-ls: var(--ls-medium);
+
+  --bold-500-ff: var(--ff-primary);
+  --bold-500-fs: var(--fs-500);
+  --bold-500-fw: var(--fw-bold);
+  --bold-500-lh: var(--lh-medium);
+  --bold-500-ls: var(--ls-medium);
+
+  --bold-600-ff: var(--ff-primary);
+  --bold-600-fs: var(--fs-600);
+  --bold-600-fw: var(--fw-bold);
+  --bold-600-lh: var(--lh-medium);
+  --bold-600-ls: var(--ls-medium);
+
+  --bold-700-ff: var(--ff-primary);
+  --bold-700-fs: var(--fs-700);
+  --bold-700-fw: var(--fw-bold);
+  --bold-700-lh: var(--lh-medium);
+  --bold-700-ls: var(--ls-medium);
+
+  --bold-800-ff: var(--ff-primary);
+  --bold-800-fs: var(--fs-800);
+  --bold-800-fw: var(--fw-bold);
+  --bold-800-lh: var(--lh-medium);
+  --bold-800-ls: var(--ls-medium);
+
+  --bold-900-ff: var(--ff-primary);
+  --bold-900-fs: var(--fs-900);
+  --bold-900-fw: var(--fw-bold);
+  --bold-900-lh: var(--lh-medium);
+  --bold-900-ls: var(--ls-medium);
+
+  --bold-950-ff: var(--ff-primary);
+  --bold-950-fs: var(--fs-950);
+  --bold-950-fw: var(--fw-bold);
+  --bold-950-lh: var(--lh-medium);
+  --bold-950-ls: var(--ls-medium);
+}
