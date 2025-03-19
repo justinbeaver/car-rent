@@ -41,6 +41,7 @@
     "sass-embedded": "^1.86.0",
     "storybook": "^8.6.7",
     "vite": "^6.2.0",
+    "vite-plugin-svgr": "^4.3.0",
     "vitest": "^3.0.9"
   },
   "eslintConfig": {
