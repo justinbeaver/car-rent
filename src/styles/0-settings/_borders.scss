@@ -9,12 +9,13 @@
   --bs-base: solid;
 
   // border color
-  --bc-light: hsl(from var(--clr-secondary-200) h s l);
-  --bc-medium: var(--clr-neutral-500);
+  --bc-light: var(--clr-secondary-200);
+  --bc-medium: var(--clr-secondary-300);
   --bc-dark: var(--clr-neutral-500);
 
   // border radius
   --br-base: var(--sp-200);
+  --br-md: var(--sp-300);
   --br-pill: 999rem;
   --br-circle: 50%;
 }
