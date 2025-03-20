@@ -7,7 +7,7 @@
 @use "@/styles/0-settings/breakpoints.module" as b;
 
 @use "./get-breakpoint-value" as *;
-@use "./px-to-rem" as *;
+@use "./rem" as *;
 @use "./round" as *;
 
 @function resolve-breakpoint($breakpoint, $breakpointsMap) {
@@ -28,10 +28,10 @@
 
   $slope: math.div($max-value - $min-value, $max-breakpoint - $min-breakpoint);
   $slope-to-unit: round($slope * 100); // Returns unitless value
-  $intercept-rem: round(px-to-rem($min-value - $slope * $min-breakpoint));
+  $intercept-rem: round(rem($min-value - $slope * $min-breakpoint));
 
-  $min-value-rem: round(px-to-rem($min-value));
-  $max-value-rem: round(px-to-rem($max-value));
+  $min-value-rem: round(rem($min-value));
+  $max-value-rem: round(rem($max-value));
 
   @return clamp(
     #{$min-value-rem},
