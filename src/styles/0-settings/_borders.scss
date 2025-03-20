@@ -9,7 +9,7 @@
   --bs-base: solid;
 
   // border color
-  --bc-light: var(--clr-neutral-500);
+  --bc-light: hsl(from var(--clr-secondary-200) h s l);
   --bc-medium: var(--clr-neutral-500);
   --bc-dark: var(--clr-neutral-500);
 
