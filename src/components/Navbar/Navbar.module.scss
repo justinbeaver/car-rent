@@ -1,0 +1,57 @@
+.header {
+  border-width: var(--bw-thin);
+  border-style: var(--bs-base);
+  border-color: var(--bc-light);
+  background-color: var(--clr-primary-0);
+}
+
+.header-inner {
+  display: grid;
+  grid-template-areas:
+    "logo space avatar"
+    "searchbar searchbar searchbar";
+  grid-template-columns: max-content 1fr max-content;
+  align-items: center;
+  row-gap: var(--sp-600);
+  padding-block: var(--sp-600);
+
+  @include above(md) {
+    grid-template-areas: "logo space-1 searchbar space-2 nav avatar";
+    grid-template-columns:
+      max-content var(--sp-950) minmax(0, 492px) minmax(var(--sp-950), 1fr)
+      max-content max-content;
+    padding-block: var(--sp-700);
+  }
+}
+
+.home-link {
+  grid-area: logo;
+  color: var(--clr-primary-500);
+  @include bold-600;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  @include above(md) {
+    @include bold-700;
+  }
+}
+
+.searchbar-wrapper {
+  grid-area: searchbar;
+}
+
+.nav {
+  grid-area: nav;
+}
+
+.nav-list {
+  display: flex;
+  gap: var(--sp-400);
+  margin-inline-end: var(--sp-400);
+}
+
+.user-page-link {
+  grid-area: avatar;
+  border-radius: var(--br-circle);
+  line-height: 0px;
+}
