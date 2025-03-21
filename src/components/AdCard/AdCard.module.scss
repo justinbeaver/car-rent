@@ -1,0 +1,67 @@
+.ad-card {
+  --_padding: 0px;
+
+  padding: var(--_padding);
+  padding-block-end: calc(var(--_padding) + 6rem);
+  border-radius: var(--br-md);
+  background-color: var(--clr-secondary-300);
+  background-image: none;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right bottom;
+
+  &--primary {
+    background-color: var(--clr-info-500);
+    background-image: url("@/assets/images/ads/ad-primary.png");
+  }
+
+  &--secondary {
+    background-color: var(--clr-primary-500);
+    background-image: url("@/assets/images/ads/ad-secondary.png");
+  }
+
+  &--sm {
+    --_padding: var(--sp-400);
+
+    .text-content {
+      max-width: 85%;
+    }
+
+    .heading {
+      margin-block-end: var(--sp-300);
+      @include semibold-300;
+    }
+
+    .description {
+      margin-block-end: var(--sp-400);
+      @include medium-100;
+    }
+  }
+
+  &--lg {
+    --_padding: var(--sp-500);
+
+    .text-content {
+      max-width: 60%;
+    }
+
+    .heading {
+      margin-block-end: var(--sp-400);
+      @include semibold-700;
+    }
+
+    .description {
+      margin-block-end: var(--sp-500);
+      @include medium-300;
+    }
+  }
+}
+
+.heading {
+  color: var(--clr-primary-0);
+  text-wrap: balance;
+}
+
+.description {
+  color: var(--clr-primary-0);
+}
