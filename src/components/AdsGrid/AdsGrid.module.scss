@@ -1,0 +1,15 @@
+.ads-grid {
+  --_card-min-width: 300px;
+
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(min(var(--_card-min-width), 100%), 1fr)
+  );
+  column-gap: var(--sp-600);
+  row-gap: var(--sp-600);
+
+  @include above(lg) {
+    --_card-min-width: 500px;
+  }
+}
