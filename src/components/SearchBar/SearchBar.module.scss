@@ -1,12 +1,13 @@
 .search-bar-wrapper {
   display: flex;
   gap: var(--sp-400);
+  width: 100%;
 }
 
 .search-bar {
   display: flex;
   align-items: center;
-  gap: var(--sp-400);
+  gap: var(--sp-100);
   width: 100%;
   border-width: var(--bw-thin);
   border-style: var(--bs-base);
