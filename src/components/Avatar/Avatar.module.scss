@@ -5,7 +5,9 @@
 
   overflow: hidden;
   display: inline-block;
+  min-width: var(--_avatar-size);
   width: var(--_avatar-size);
+  min-height: var(--_avatar-size);
   height: var(--_avatar-size);
   border-radius: var(--br-circle);
   background-color: var(--clr-primary-500);
