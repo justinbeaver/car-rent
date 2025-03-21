@@ -27,9 +27,3 @@ $fluidMap: (
   wrapper-md: $wrapper-md,
   wrapper-lg: $wrapper-lg,
 );
-
-:export {
-  sm: $breakpoint-sm;
-  md: $breakpoint-md;
-  lg: $breakpoint-lg;
-}

@@ -1,0 +1,7 @@
+@use "@/styles/0-settings/breakpoints" as *;
+
+:export {
+  sm: $breakpoint-sm;
+  md: $breakpoint-md;
+  lg: $breakpoint-lg;
+}
