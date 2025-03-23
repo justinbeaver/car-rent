@@ -1,0 +1,63 @@
+@use "sass:map";
+
+$card-sizes: (
+  sm: 230px,
+  md: 300px,
+  lg: 500px,
+);
+
+$gap-sizes: (
+  sm: var(--sp-400),
+  md: var(--sp-600),
+  lg: var(--sp-700),
+);
+
+.cars-grid {
+  --_card-width: auto;
+  --_gap: normal;
+
+  display: grid;
+  gap: var(--_gap);
+
+  &--horizontal {
+    overflow-x: auto;
+    grid-auto-flow: column;
+    grid-auto-columns: var(--_card-width);
+  }
+
+  &--vertical {
+    grid-template-columns: repeat(auto-fit, minmax(var(--_card-width), 1fr));
+  }
+
+  &--sm {
+    --_card-width: #{map.get($card-sizes, sm)};
+    --_gap: #{map.get($gap-sizes, sm)};
+  }
+
+  &--md {
+    --_card-width: #{map.get($card-sizes, md)};
+    --_gap: #{map.get($gap-sizes, md)};
+  }
+
+  &--lg {
+    --_card-width: #{map.get($card-sizes, lg)};
+    --_gap: #{map.get($gap-sizes, lg)};
+  }
+
+  &__scrollbar--hidden {
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  &__snap--inline {
+    scroll-snap-type: inline mandatory;
+    // scroll-padding-inline: 30px 0;
+
+    > * {
+      scroll-snap-align: start;
+    }
+  }
+}
