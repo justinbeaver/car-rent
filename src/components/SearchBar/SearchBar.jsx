@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-import { IconButton } from "../IconButton/IconButton";
+import { IconButton } from "@/components/IconButton/IconButton";
 import SearchIcon from "@/assets/icons/search-normal.svg?react";
 import FilterIcon from "@/assets/icons/filter.svg?react";
 
