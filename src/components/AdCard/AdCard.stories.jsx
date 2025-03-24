@@ -1,9 +1,7 @@
 import { AdCard } from "./AdCard";
 
 export default {
-  title: "AdCard",
   component: AdCard,
-  tags: ["autodocs"],
 };
 
 export const Primary = {

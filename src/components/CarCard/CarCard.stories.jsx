@@ -1,9 +1,7 @@
 import { CarCard } from "./CarCard";
 
 export default {
-  title: "CarCard",
   component: CarCard,
-  tags: ["autodocs"],
 };
 
 export const Vertical = {

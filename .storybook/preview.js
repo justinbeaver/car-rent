@@ -1,7 +1,7 @@
 import "@/index.scss";
 
 /** @type { import('@storybook/react').Preview } */
-const preview = {
+export default {
   parameters: {
     controls: {
       matchers: {
@@ -11,6 +11,5 @@ const preview = {
     },
     layout: "fullscreen", // padded | centered | fullscreen
   },
+  tags: ["autodocs"],
 };
-
-export default preview;

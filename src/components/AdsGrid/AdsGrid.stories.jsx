@@ -2,9 +2,7 @@ import { AdsGrid } from "./AdsGrid";
 import { MediaQueriesProvider } from "@/context/mediaQueriesContext";
 
 export default {
-  title: "AdsGrid",
   component: AdsGrid,
-  tags: ["autodocs"],
   decorators: [
     (Story) => (
       <MediaQueriesProvider>

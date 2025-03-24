@@ -4,9 +4,7 @@ import { Wrapper } from "./Wrapper";
 import { wrapperConfig } from "./Wrapper.config";
 
 export default {
-  title: "Wrapper",
   component: Wrapper,
-  tags: ["autodocs"],
   argTypes: {
     size: {
       options: Object.keys(wrapperConfig.variants.size),

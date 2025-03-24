@@ -1,9 +1,7 @@
 import { Avatar } from "./Avatar";
 
 export default {
-  title: "Avatar",
   component: Avatar,
-  tags: ["autodocs"],
 };
 
 export const Md = {

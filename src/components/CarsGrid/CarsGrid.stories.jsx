@@ -2,9 +2,7 @@ import { CarsGrid } from "./CarsGrid";
 import { CarCard } from "@/components/CarCard/CarCard";
 
 export default {
-  title: "CarsGrid",
   component: CarsGrid,
-  tags: ["autodocs"],
 };
 
 const cars = [
