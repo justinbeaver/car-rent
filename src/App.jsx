@@ -1,9 +1,12 @@
-import { MediaQueriesProvider } from "./context/mediaQueriesContext";
+import { RouterProvider } from "react-router-dom";
+
+import { router } from "@/routes";
+import { MediaQueriesProvider } from "@/context/mediaQueriesContext";
 
 function App() {
   return (
     <MediaQueriesProvider>
-      <div>App</div>
+      <RouterProvider router={router} />
     </MediaQueriesProvider>
   );
 }
