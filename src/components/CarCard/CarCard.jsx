@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 import { IconButton } from "@/components/IconButton/IconButton";
 import { Button } from "@/components/Button/Button";
@@ -12,6 +13,7 @@ import s from "./CarCard.module.scss";
 
 export const CarCard = ({
   variant = "vertical",
+  carId,
   model,
   type,
   imgUrl,
@@ -36,7 +38,11 @@ export const CarCard = ({
     <article className={carCardClass({ variant })} {...rest}>
       <div className={s.topper}>
         <header>
-          <h2 className={s.heading}>{model}</h2>
+          <h2>
+            <Link className={s.heading} to={`/cars/${carId}`}>
+              {model}
+            </Link>
+          </h2>
           <p className={s.type}>{type}</p>
         </header>
         <IconButton variant="minimal" size="sm" aria-label="TODO">
@@ -80,8 +86,8 @@ export const CarCard = ({
             <span className={s.price}>
               {formattedDiscountedPrice
                 ? formattedDiscountedPrice
-                : formattedPrice}{" "}
-              /
+                : formattedPrice}
+              {" /"}
             </span>
             <span> day</span>
           </p>
@@ -101,6 +107,7 @@ export const CarCard = ({
 CarCard.propTypes = {
   variant: PropTypes.oneOf(Object.keys(carCardConfig.variants.variant))
     .isRequired,
+  carId: PropTypes.number.isRequired,
   model: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
   imgUrl: PropTypes.string.isRequired,

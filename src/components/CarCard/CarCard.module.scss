@@ -43,6 +43,7 @@
 .heading {
   color: var(--clr-secondary-500);
   @include semibold-300;
+  text-decoration: none;
 }
 
 .type {
