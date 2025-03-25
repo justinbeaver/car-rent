@@ -11,7 +11,7 @@ import { carCardClass, carCardConfig } from "./CarCard.config";
 import s from "./CarCard.module.scss";
 
 export const CarCard = ({
-  variant,
+  variant = "vertical",
   model,
   type,
   imgUrl,
