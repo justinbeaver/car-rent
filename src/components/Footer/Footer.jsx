@@ -40,7 +40,7 @@ export const Footer = () => {
 
   return (
     <footer className={s.footer}>
-      <Wrapper>
+      <Wrapper size="lg" pad="lg">
         <div className={s.body}>
           <div className={s.topper}>
             <a className={s["home-link"]}>{brandName}</a>
@@ -51,13 +51,13 @@ export const Footer = () => {
           </div>
           <div className={s.navigation}>
             {nav.map(({ label, navItems }) => (
-              <nav>
+              <nav key={label}>
                 <p id={label} className={s["nav__label"]}>
                   {label}
                 </p>
                 <ul className={s["nav__list"]} aria-labelledby={label}>
                   {navItems.map(({ label, url }) => (
-                    <li>
+                    <li key={label}>
                       <a className={s["nav__item"]} href={url}>
                         {label}
                       </a>
