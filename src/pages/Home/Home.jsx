@@ -23,8 +23,14 @@ const PopularCarSection = () => {
 
   const cardsList = popularCars
     .slice(0, 4)
-    .map(({ id, ...rest }) => (
-      <CarCard key={id} variant="vertical" {...rest} />
+    .map(({ id, images, ...rest }) => (
+      <CarCard
+        key={id}
+        variant="vertical"
+        carId={id}
+        imgUrl={images[0]}
+        {...rest}
+      />
     ));
 
   return (
@@ -50,8 +56,14 @@ const RecommendationCarSection = () => {
 
   const cardsList = allCars
     .slice(0, 8)
-    .map(({ id, ...rest }) => (
-      <CarCard key={id} variant={isSm ? "vertical" : "horizontal"} {...rest} />
+    .map(({ id, images, ...rest }) => (
+      <CarCard
+        key={id}
+        variant={isSm ? "vertical" : "horizontal"}
+        carId={id}
+        imgUrl={images[0]}
+        {...rest}
+      />
     ));
 
   return (
@@ -62,7 +74,9 @@ const RecommendationCarSection = () => {
         </header>
         <CarsGrid size="sm" cardsList={cardsList} />
         <div className={s["show-more"]}>
-          <Button className={s["show-more__button"]}>Show more cars</Button>
+          <Button to="cars" className={s["show-more__button"]}>
+            Show more cars
+          </Button>
           <p className={s["show-more__count"]}>120 Car</p>
         </div>
       </Wrapper>
