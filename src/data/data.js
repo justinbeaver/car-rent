@@ -3,7 +3,7 @@ export const allCars = [
     id: 1,
     model: "Koenigsegg",
     type: "Sport",
-    imgUrl: "/images/cars/koenigsegg.png",
+    images: ["/images/cars/koenigsegg.png", "/images/look-3.jpg"],
     price: 99.0,
     specifications: {
       mileage: 90,
@@ -15,7 +15,7 @@ export const allCars = [
     id: 2,
     model: "Nissan GT - R",
     type: "Sport",
-    imgUrl: "/images/cars/nissan_gt-r.png",
+    images: ["/images/cars/nissan_gt-r.png", "/images/look-3.jpg"],
     price: 100.0,
     discountedPrice: 80.0,
     specifications: {
@@ -28,7 +28,7 @@ export const allCars = [
     id: 3,
     model: "Rolls - Royce",
     type: "Sedan",
-    imgUrl: "/images/cars/rolls-royce.png",
+    images: ["/images/cars/rolls-royce.png", "/images/look-3.jpg"],
     price: 96.0,
     specifications: {
       mileage: 70,
@@ -40,7 +40,7 @@ export const allCars = [
     id: 4,
     model: "All New Rush",
     type: "SUV",
-    imgUrl: "/images/cars/all_new_rush.png",
+    images: ["/images/cars/all_new_rush.png", "/images/look-3.jpg"],
     price: 80.0,
     discountedPrice: 72.0,
     specifications: {
@@ -53,7 +53,7 @@ export const allCars = [
     id: 5,
     model: "CR - V",
     type: "SUV",
-    imgUrl: "/images/cars/cr-v.png",
+    images: ["/images/cars/cr-v.png", "/images/look-3.jpg"],
     price: 80.0,
     specifications: {
       mileage: 80,
@@ -65,7 +65,7 @@ export const allCars = [
     id: 6,
     model: "All New Terios",
     type: "SUV",
-    imgUrl: "/images/cars/all-new-terios.png",
+    images: ["/images/cars/all-new-terios.png", "/images/look-3.jpg"],
     price: 74.0,
     specifications: {
       mileage: 90,
@@ -77,7 +77,7 @@ export const allCars = [
     id: 7,
     model: "MG ZX Exclusice",
     type: "Hatchback",
-    imgUrl: "/images/cars/mg-zx-exclusice.png",
+    images: ["/images/cars/mg-zx-exclusice.png", "/images/look-3.jpg"],
     price: 80.0,
     discountedPrice: 76.0,
     specifications: {
@@ -90,7 +90,7 @@ export const allCars = [
     id: 8,
     model: "New MG ZS",
     type: "SUV",
-    imgUrl: "/images/cars/new-mg-zs.png",
+    images: ["/images/cars/new-mg-zs.png", "/images/look-3.jpg"],
     price: 80.0,
     specifications: {
       mileage: 80,
@@ -102,7 +102,7 @@ export const allCars = [
     id: 9,
     model: "MG ZX Excite",
     type: "Hatchback",
-    imgUrl: "/images/cars/mg-zx-excite.png",
+    images: ["/images/cars/mg-zx-excite.png", "/images/look-3.jpg"],
     price: 74.0,
     specifications: {
       mileage: 90,
@@ -114,7 +114,7 @@ export const allCars = [
     id: 10,
     model: "New MG ZS",
     type: "SUV",
-    imgUrl: "/images/cars/new-mg-zs.png",
+    images: ["/images/cars/new-mg-zs.png", "/images/look-3.jpg"],
     price: 80.0,
     specifications: {
       mileage: 80,
@@ -129,7 +129,7 @@ export const popularCars = [
     id: 1,
     model: "Koenigsegg",
     type: "Sport",
-    imgUrl: "/images/cars/koenigsegg.png",
+    images: ["/images/cars/koenigsegg.png", "/images/look-3.jpg"],
     price: 99.0,
     specifications: {
       mileage: 90,
@@ -141,7 +141,7 @@ export const popularCars = [
     id: 7,
     model: "MG ZX Exclusice",
     type: "Hatchback",
-    imgUrl: "/images/cars/mg-zx-exclusice.png",
+    images: ["/images/cars/mg-zx-exclusice.png", "/images/look-3.jpg"],
     price: 80.0,
     discountedPrice: 76.0,
     specifications: {
@@ -154,7 +154,7 @@ export const popularCars = [
     id: 3,
     model: "Rolls - Royce",
     type: "Sedan",
-    imgUrl: "/images/cars/rolls-royce.png",
+    images: ["/images/cars/rolls-royce.png", "/images/look-3.jpg"],
     price: 96.0,
     specifications: {
       mileage: 70,
@@ -166,7 +166,7 @@ export const popularCars = [
     id: 10,
     model: "New MG ZS",
     type: "SUV",
-    imgUrl: "/images/cars/new-mg-zs.png",
+    images: ["/images/cars/new-mg-zs.png", "/images/look-3.jpg"],
     price: 80.0,
     specifications: {
       mileage: 80,
@@ -175,3 +175,7 @@ export const popularCars = [
     },
   },
 ];
+
+export const carDescriptions = {
+  2: 'NISMO has become the embodiment of Nissan\'s outstanding performance, inspired by the most unforgiving proving ground, the "race track".',
+};
