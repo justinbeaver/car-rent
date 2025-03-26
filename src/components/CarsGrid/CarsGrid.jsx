@@ -8,11 +8,17 @@ export const CarsGrid = ({
   scrollbar = "visible",
   snap = "inline",
   cardsList = [],
+  className = "",
   ...rest
 }) => {
   return (
     <div
-      className={carsGridClass({ variant, size, scrollbar, snap })}
+      className={`${carsGridClass({
+        variant,
+        size,
+        scrollbar,
+        snap,
+      })} ${className}`}
       {...rest}
     >
       {cardsList}
@@ -28,4 +34,5 @@ CarsGrid.propTypes = {
     .isRequired,
   snap: PropTypes.oneOf(Object.keys(carsGridConfig.variants.snap)).isRequired,
   cardsList: PropTypes.arrayOf(PropTypes.node).isRequired,
+  className: PropTypes.string,
 };
