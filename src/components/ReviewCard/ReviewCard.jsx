@@ -5,7 +5,7 @@ import { Avatar } from "@/components/Avatar/Avatar";
 import { reviewCardClass, reviewCardConfig } from "./ReviewCard.config";
 import s from "./ReviewCard.module.scss";
 
-export const ReviewCard = ({ size, review, date, rating, user }) => {
+export const ReviewCard = ({ size = "sm", review, date, rating, user }) => {
   return (
     <article className={reviewCardClass({ size })}>
       <Avatar
