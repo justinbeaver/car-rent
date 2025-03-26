@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import { Wrapper } from "@/components/Wrapper/Wrapper";
 import { SearchBar } from "@/components/SearchBar/SearchBar";
 import { IconButton } from "@/components/IconButton/IconButton";
@@ -19,9 +21,9 @@ export const Navbar = () => {
     <header className={s.header}>
       <Wrapper size="lg" pad="lg">
         <div className={s["header-inner"]}>
-          <a className={s["home-link"]} href="/" aria-label="home">
+          <Link className={s["home-link"]} href="/" aria-label="home">
             {brandName}
-          </a>
+          </Link>
           <div className={s["searchbar-wrapper"]}>
             <SearchBar variant={isMd ? "combined" : "separate"} />
           </div>
