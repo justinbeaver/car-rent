@@ -1,0 +1,16 @@
+.section__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-block-end: var(--sp-400);
+  padding-inline: var(--sp-400);
+}
+
+.section__heading {
+  color: var(--clr-secondary-300);
+  @include semibold-200;
+
+  @include above(sm) {
+    @include semibold-300;
+  }
+}

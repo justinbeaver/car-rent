@@ -25,20 +25,10 @@
   }
 }
 
-.show-more {
-  display: grid;
-  grid-template-areas: "stack";
-  align-items: center;
-}
+.cars-grid {
+  grid-column-end: full;
 
-.show-more__button {
-  grid-area: stack;
-  justify-self: center;
-}
-
-.show-more__count {
-  grid-area: stack;
-  justify-self: end;
-  color: var(--clr-secondary-300);
-  @include semibold-200;
+  @include above(md) {
+    grid-column-end: md;
+  }
 }
