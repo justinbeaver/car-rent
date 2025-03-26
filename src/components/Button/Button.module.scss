@@ -2,13 +2,13 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  gap: 8px;
+  gap: var(--sp-300);
   padding-inline: 0px;
   padding-block: 0px;
   border-width: var(--bw-thin);
   border-style: solid;
   border-color: transparent;
-  border-radius: var(--br-base);
+  border-radius: var(--br-sm);
   background-color: transparent;
   color: currentColor;
   text-decoration: none;
