@@ -12,11 +12,22 @@ export default defineConfig({
       "@": resolve(__dirname, "src"),
     },
   },
+  server: {
+    proxy: {
+      "/api": {
+        target: "http://localhost:3000",
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, ""),
+      },
+    },
+  },
   css: {
     preprocessorOptions: {
       scss: {
-        additionalData: `@use "@/styles/1-tools/media-queries" as *;
-        @use "@/styles/1-tools/text-preset" as *;`,
+        additionalData: `
+          @use "@/styles/1-tools/media-queries" as *;
+          @use "@/styles/1-tools/text-preset" as *;
+        `,
       },
     },
   },
