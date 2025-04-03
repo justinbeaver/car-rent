@@ -1,0 +1,266 @@
+{
+  "cars": [
+    {
+      "id": "1",
+      "carTypeId": "1",
+      "model": "Koenigsegg",
+      "images": [
+        { "url": "/images/cars/koenigsegg.png", "alt": "meaningful alt text" },
+        { "url": "/images/look-3.jpg", "alt": "meaningful alt text" }
+      ],
+      "price": 99.0,
+      "specifications": {
+        "mileage": 90,
+        "transmission": "Manual",
+        "capacity": 2
+      }
+    },
+    {
+      "id": "2",
+      "carTypeId": "1",
+      "model": "Nissan GT - R",
+      "images": [
+        { "url": "/images/cars/nissan_gt-r.png", "alt": "meaningful alt text" },
+        { "url": "/images/look-3.jpg", "alt": "meaningful alt text" }
+      ],
+      "price": 100.0,
+      "discountedPrice": 80.0,
+      "specifications": {
+        "mileage": 80,
+        "transmission": "Manual",
+        "capacity": 2
+      }
+    },
+    {
+      "id": "3",
+      "carTypeId": "3",
+      "model": "Rolls - Royce",
+      "images": [
+        { "url": "/images/cars/rolls-royce.png", "alt": "meaningful alt text" },
+        { "url": "/images/look-3.jpg", "alt": "meaningful alt text" }
+      ],
+      "price": 96.0,
+      "specifications": {
+        "mileage": 70,
+        "transmission": "Manual",
+        "capacity": 4
+      }
+    },
+    {
+      "id": "4",
+      "carTypeId": "2",
+      "model": "All New Rush",
+      "images": [
+        {
+          "url": "/images/cars/all_new_rush.png",
+          "alt": "meaningful alt text"
+        },
+        { "url": "/images/look-3.jpg", "alt": "meaningful alt text" }
+      ],
+      "price": 80.0,
+      "discountedPrice": 72.0,
+      "specifications": {
+        "mileage": 70,
+        "transmission": "Manual",
+        "capacity": 6
+      }
+    },
+    {
+      "id": "5",
+      "carTypeId": "2",
+      "model": "CR - V",
+      "images": [
+        { "url": "/images/cars/cr-v.png", "alt": "meaningful alt text" },
+        { "url": "/images/look-3.jpg", "alt": "meaningful alt text" }
+      ],
+      "price": 80.0,
+      "specifications": {
+        "mileage": 80,
+        "transmission": "Manual",
+        "capacity": 6
+      }
+    },
+    {
+      "id": "6",
+      "carTypeId": "2",
+      "model": "All New Terios",
+      "images": [
+        {
+          "url": "/images/cars/all-new-terios.png",
+          "alt": "meaningful alt text"
+        },
+        { "url": "/images/look-3.jpg", "alt": "meaningful alt text" }
+      ],
+      "price": 74.0,
+      "specifications": {
+        "mileage": 90,
+        "transmission": "Manual",
+        "capacity": 6
+      }
+    },
+    {
+      "id": "7",
+      "carTypeId": "4",
+      "model": "MG ZX Exclusice",
+      "images": [
+        {
+          "url": "/images/cars/mg-zx-exclusice.png",
+          "alt": "meaningful alt text"
+        },
+        { "url": "/images/look-3.jpg", "alt": "meaningful alt text" }
+      ],
+      "price": 80.0,
+      "discountedPrice": 76.0,
+      "specifications": {
+        "mileage": 70,
+        "transmission": "Manual",
+        "capacity": 4
+      }
+    },
+    {
+      "id": "8",
+      "carTypeId": "2",
+      "model": "New MG ZS",
+      "images": [
+        { "url": "/images/cars/new-mg-zs.png", "alt": "meaningful alt text" },
+        { "url": "/images/look-3.jpg", "alt": "meaningful alt text" }
+      ],
+      "price": 80.0,
+      "specifications": {
+        "mileage": 80,
+        "transmission": "Manual",
+        "capacity": 6
+      }
+    },
+    {
+      "id": "9",
+      "carTypeId": "4",
+      "model": "MG ZX Excite",
+      "images": [
+        {
+          "url": "/images/cars/mg-zx-excite.png",
+          "alt": "meaningful alt text"
+        },
+        { "url": "/images/look-3.jpg", "alt": "meaningful alt text" }
+      ],
+      "price": 74.0,
+      "specifications": {
+        "mileage": 90,
+        "transmission": "Manual",
+        "capacity": 4
+      }
+    },
+    {
+      "id": "10",
+      "type": "2",
+      "model": "New MG ZS",
+      "images": [
+        { "url": "/images/cars/new-mg-zs.png", "alt": "meaningful alt text" },
+        { "url": "/images/look-3.jpg", "alt": "meaningful alt text" }
+      ],
+      "price": 80.0,
+      "specifications": {
+        "mileage": 80,
+        "transmission": "Manual",
+        "capacity": 6
+      }
+    }
+  ],
+  "carTypes": [
+    { "id": "1", "type": "Sport" },
+    { "id": "2", "type": "SUV" },
+    { "id": "3", "type": "Sedan" },
+    { "id": "4", "type": "Hatchback" }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "Alex Stanton",
+      "occupation": "CEO at Bukalapak",
+      "avatarUrl": "/images/users/alex-stanton.png"
+    },
+    {
+      "id": "2",
+      "name": "Skylar Dias",
+      "occupation": "CEO at Amazon",
+      "avatarUrl": "/images/users/skylar-dias.png"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "1",
+      "carId": "2",
+      "userId": "1",
+      "review": "We are very happy with the service from the MORENT App. Morent has a low price and also a large variety of cars with good and comfortable facilities. In addition, the service provided by the officers is also very friendly and very polite.",
+      "rating": 4,
+      "date": "21 July 2022"
+    },
+    {
+      "id": "2",
+      "carId": "2",
+      "userId": "2",
+      "review": "We are greatly helped by the services of the MORENT Application. Morent has low prices and also a wide variety of cars with good and comfortable facilities. In addition, the service provided by the officers is also very friendly and very polite.",
+      "rating": 4,
+      "date": "20 July 2022"
+    }
+  ],
+  "carDescriptions": [
+    {
+      "carId": "1",
+      "description": "M Performance by BMW combines cutting-edge technology with a passion for driving, designed for the ultimate in speed and precision."
+    },
+    {
+      "carId": "2",
+      "description": "NISMO has become the embodiment of Nissan's outstanding performance, inspired by the most unforgiving proving ground, the \"race track\"."
+    },
+    {
+      "carId": "3",
+      "description": "AMG by Mercedes-Benz represents the pinnacle of luxury and performance, delivering an unmatched driving experience that leaves a lasting impression."
+    },
+    {
+      "carId": "4",
+      "description": "Audi RS is where engineering meets adrenaline, designed for those who crave intense performance and precise handling on every road."
+    },
+    {
+      "carId": "5",
+      "description": "Subaru STI embodies a legacy of rally dominance, built for power, agility, and a thrilling ride on any terrain."
+    },
+    {
+      "carId": "6",
+      "description": "Ford Mustang GT delivers pure American muscle, with a growl that commands attention and performance that pushes the limits."
+    },
+    {
+      "carId": "7",
+      "description": "Chevrolet Corvette combines iconic design with track-ready performance, making every drive an exhilarating experience."
+    },
+    {
+      "carId": "8",
+      "description": "Porsche 911 Turbo blends speed, luxury, and style, a true performance icon that offers a driving experience like no other."
+    },
+    {
+      "carId": "9",
+      "description": "Lexus F Series cars are designed to deliver breathtaking performance while maintaining the luxury and refinement Lexus is known for."
+    },
+    {
+      "carId": "10",
+      "description": "Honda Type R offers a thrilling ride with uncompromising precision, creating a perfect balance between power, agility, and everyday usability."
+    }
+  ],
+  "popularCars": [
+    { "carId": "1" },
+    { "carId": "7" },
+    { "carId": "3" },
+    { "carId": "10" },
+    { "carId": "4" }
+  ],
+  "recommendedCars": [
+    { "carId": "4" },
+    { "carId": "5" },
+    { "carId": "6" },
+    { "carId": "7" },
+    { "carId": "8" },
+    { "carId": "10" },
+    { "carId": "9" },
+    { "carId": "3" }
+  ]
+}
