@@ -3,6 +3,7 @@
     {
       "id": "1",
       "carTypeId": "1",
+      "carDescriptionId": "1",
       "model": "Koenigsegg",
       "images": [
         { "url": "/images/cars/koenigsegg.png", "alt": "meaningful alt text" },
@@ -18,6 +19,7 @@
     {
       "id": "2",
       "carTypeId": "1",
+      "carDescriptionId": "2",
       "model": "Nissan GT - R",
       "images": [
         { "url": "/images/cars/nissan_gt-r.png", "alt": "meaningful alt text" },
@@ -34,6 +36,7 @@
     {
       "id": "3",
       "carTypeId": "3",
+      "carDescriptionId": "3",
       "model": "Rolls - Royce",
       "images": [
         { "url": "/images/cars/rolls-royce.png", "alt": "meaningful alt text" },
@@ -49,6 +52,7 @@
     {
       "id": "4",
       "carTypeId": "2",
+      "carDescriptionId": "4",
       "model": "All New Rush",
       "images": [
         {
@@ -68,6 +72,7 @@
     {
       "id": "5",
       "carTypeId": "2",
+      "carDescriptionId": "5",
       "model": "CR - V",
       "images": [
         { "url": "/images/cars/cr-v.png", "alt": "meaningful alt text" },
@@ -83,6 +88,7 @@
     {
       "id": "6",
       "carTypeId": "2",
+      "carDescriptionId": "6",
       "model": "All New Terios",
       "images": [
         {
@@ -101,6 +107,7 @@
     {
       "id": "7",
       "carTypeId": "4",
+      "carDescriptionId": "7",
       "model": "MG ZX Exclusice",
       "images": [
         {
@@ -120,6 +127,7 @@
     {
       "id": "8",
       "carTypeId": "2",
+      "carDescriptionId": "8",
       "model": "New MG ZS",
       "images": [
         { "url": "/images/cars/new-mg-zs.png", "alt": "meaningful alt text" },
@@ -135,6 +143,7 @@
     {
       "id": "9",
       "carTypeId": "4",
+      "carDescriptionId": "9",
       "model": "MG ZX Excite",
       "images": [
         {
@@ -152,7 +161,8 @@
     },
     {
       "id": "10",
-      "type": "2",
+      "carTypeId": "2",
+      "carDescriptionId": "10",
       "model": "New MG ZS",
       "images": [
         { "url": "/images/cars/new-mg-zs.png", "alt": "meaningful alt text" },
@@ -206,43 +216,43 @@
   ],
   "carDescriptions": [
     {
-      "carId": "1",
+      "id": "1",
       "description": "M Performance by BMW combines cutting-edge technology with a passion for driving, designed for the ultimate in speed and precision."
     },
     {
-      "carId": "2",
+      "id": "2",
       "description": "NISMO has become the embodiment of Nissan's outstanding performance, inspired by the most unforgiving proving ground, the \"race track\"."
     },
     {
-      "carId": "3",
+      "id": "3",
       "description": "AMG by Mercedes-Benz represents the pinnacle of luxury and performance, delivering an unmatched driving experience that leaves a lasting impression."
     },
     {
-      "carId": "4",
+      "id": "4",
       "description": "Audi RS is where engineering meets adrenaline, designed for those who crave intense performance and precise handling on every road."
     },
     {
-      "carId": "5",
+      "id": "5",
       "description": "Subaru STI embodies a legacy of rally dominance, built for power, agility, and a thrilling ride on any terrain."
     },
     {
-      "carId": "6",
+      "id": "6",
       "description": "Ford Mustang GT delivers pure American muscle, with a growl that commands attention and performance that pushes the limits."
     },
     {
-      "carId": "7",
+      "id": "7",
       "description": "Chevrolet Corvette combines iconic design with track-ready performance, making every drive an exhilarating experience."
     },
     {
-      "carId": "8",
+      "id": "8",
       "description": "Porsche 911 Turbo blends speed, luxury, and style, a true performance icon that offers a driving experience like no other."
     },
     {
-      "carId": "9",
+      "id": "9",
       "description": "Lexus F Series cars are designed to deliver breathtaking performance while maintaining the luxury and refinement Lexus is known for."
     },
     {
-      "carId": "10",
+      "id": "10",
       "description": "Honda Type R offers a thrilling ride with uncompromising precision, creating a perfect balance between power, agility, and everyday usability."
     }
   ],
