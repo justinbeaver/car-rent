@@ -2,27 +2,15 @@ import { Link } from "react-router-dom";
 
 import { Wrapper } from "@/components/Wrapper/Wrapper";
 import { CarsGrid } from "@/components/CarsGrid/CarsGrid";
-import { CarCard } from "@/components/CarCard/CarCard";
 import { useMediaQueriesContext } from "@/context/mediaQueriesContext";
 
-import { getPopularCars } from "./PopularCarSection.utils";
+import { usePopularCars } from "./PopularCarSection.hooks";
 import s from "./PopularCarSection.module.scss";
 
 export const PopularCarSection = () => {
   const { isMd } = useMediaQueriesContext();
-  const popularCars = getPopularCars();
 
-  const cardsList = popularCars
-    .slice(0, 4)
-    .map(({ id, images, ...rest }) => (
-      <CarCard
-        key={id}
-        variant="vertical"
-        carId={id}
-        imgUrl={images[0]}
-        {...rest}
-      />
-    ));
+  const { cardsList, isLoading, isError, error } = usePopularCars({ limit: 4 });
 
   return (
     <section className={s.section}>
@@ -33,12 +21,19 @@ export const PopularCarSection = () => {
             View All
           </Link>
         </header>
-        <CarsGrid
-          variant={isMd ? "vertical" : "horizontal"}
-          size="sm"
-          cardsList={cardsList}
-          className={s["cars-grid"]}
-        />
+
+        {isLoading && <p>Loading...</p>}
+
+        {isError && <p>{error.message}</p>}
+
+        {!isLoading && !isError && (
+          <CarsGrid
+            variant={isMd ? "vertical" : "horizontal"}
+            size="sm"
+            cardsList={cardsList}
+            className={s["cars-grid"]}
+          />
+        )}
       </Wrapper>
     </section>
   );
