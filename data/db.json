@@ -2,9 +2,9 @@
   "cars": [
     {
       "id": "1",
-      "carTypeId": "1",
-      "carDescriptionId": "1",
       "model": "Koenigsegg",
+      "type": "Sport",
+      "description": "M Performance by BMW combines cutting-edge technology with a passion for driving, designed for the ultimate in speed and precision.",
       "images": [
         { "url": "/images/cars/koenigsegg.png", "alt": "meaningful alt text" },
         { "url": "/images/look-3.jpg", "alt": "meaningful alt text" }
@@ -18,9 +18,9 @@
     },
     {
       "id": "2",
-      "carTypeId": "1",
-      "carDescriptionId": "2",
       "model": "Nissan GT - R",
+      "type": "Sport",
+      "description": "NISMO has become the embodiment of Nissan's outstanding performance, inspired by the most unforgiving proving ground, the \"race track\".",
       "images": [
         { "url": "/images/cars/nissan_gt-r.png", "alt": "meaningful alt text" },
         { "url": "/images/look-3.jpg", "alt": "meaningful alt text" }
@@ -35,9 +35,9 @@
     },
     {
       "id": "3",
-      "carTypeId": "3",
-      "carDescriptionId": "3",
       "model": "Rolls - Royce",
+      "type": "Sedan",
+      "description": "AMG by Mercedes-Benz represents the pinnacle of luxury and performance, delivering an unmatched driving experience that leaves a lasting impression.",
       "images": [
         { "url": "/images/cars/rolls-royce.png", "alt": "meaningful alt text" },
         { "url": "/images/look-3.jpg", "alt": "meaningful alt text" }
@@ -51,9 +51,9 @@
     },
     {
       "id": "4",
-      "carTypeId": "2",
-      "carDescriptionId": "4",
       "model": "All New Rush",
+      "type": "SUV",
+      "description": "Audi RS is where engineering meets adrenaline, designed for those who crave intense performance and precise handling on every road.",
       "images": [
         {
           "url": "/images/cars/all_new_rush.png",
@@ -71,9 +71,9 @@
     },
     {
       "id": "5",
-      "carTypeId": "2",
-      "carDescriptionId": "5",
       "model": "CR - V",
+      "type": "SUV",
+      "description": "Subaru STI embodies a legacy of rally dominance, built for power, agility, and a thrilling ride on any terrain.",
       "images": [
         { "url": "/images/cars/cr-v.png", "alt": "meaningful alt text" },
         { "url": "/images/look-3.jpg", "alt": "meaningful alt text" }
@@ -87,9 +87,9 @@
     },
     {
       "id": "6",
-      "carTypeId": "2",
-      "carDescriptionId": "6",
       "model": "All New Terios",
+      "type": "SUV",
+      "description": "Ford Mustang GT delivers pure American muscle, with a growl that commands attention and performance that pushes the limits.",
       "images": [
         {
           "url": "/images/cars/all-new-terios.png",
@@ -106,9 +106,9 @@
     },
     {
       "id": "7",
-      "carTypeId": "4",
-      "carDescriptionId": "7",
       "model": "MG ZX Exclusice",
+      "type": "Hatchback",
+      "description": "Chevrolet Corvette combines iconic design with track-ready performance, making every drive an exhilarating experience.",
       "images": [
         {
           "url": "/images/cars/mg-zx-exclusice.png",
@@ -126,9 +126,9 @@
     },
     {
       "id": "8",
-      "carTypeId": "2",
-      "carDescriptionId": "8",
       "model": "New MG ZS",
+      "type": "SUV",
+      "description": "Porsche 911 Turbo blends speed, luxury, and style, a true performance icon that offers a driving experience like no other.",
       "images": [
         { "url": "/images/cars/new-mg-zs.png", "alt": "meaningful alt text" },
         { "url": "/images/look-3.jpg", "alt": "meaningful alt text" }
@@ -142,9 +142,9 @@
     },
     {
       "id": "9",
-      "carTypeId": "4",
-      "carDescriptionId": "9",
       "model": "MG ZX Excite",
+      "type": "Hatchback",
+      "description": "Lexus F Series cars are designed to deliver breathtaking performance while maintaining the luxury and refinement Lexus is known for.",
       "images": [
         {
           "url": "/images/cars/mg-zx-excite.png",
@@ -161,9 +161,9 @@
     },
     {
       "id": "10",
-      "carTypeId": "2",
-      "carDescriptionId": "10",
       "model": "New MG ZS",
+      "type": "SUV",
+      "description": "Honda Type R offers a thrilling ride with uncompromising precision, creating a perfect balance between power, agility, and everyday usability.",
       "images": [
         { "url": "/images/cars/new-mg-zs.png", "alt": "meaningful alt text" },
         { "url": "/images/look-3.jpg", "alt": "meaningful alt text" }
@@ -171,6 +171,96 @@
       "price": 80.0,
       "specifications": {
         "mileage": 80,
+        "transmission": "Manual",
+        "capacity": 6
+      }
+    }
+  ],
+  "popular": [
+    {
+      "id": "1",
+      "model": "Koenigsegg",
+      "type": "Sport",
+      "description": "M Performance by BMW combines cutting-edge technology with a passion for driving, designed for the ultimate in speed and precision.",
+      "images": [
+        { "url": "/images/cars/koenigsegg.png", "alt": "meaningful alt text" },
+        { "url": "/images/look-3.jpg", "alt": "meaningful alt text" }
+      ],
+      "price": 99.0,
+      "specifications": {
+        "mileage": 90,
+        "transmission": "Manual",
+        "capacity": 2
+      }
+    },
+    {
+      "id": "7",
+      "model": "MG ZX Exclusice",
+      "type": "Hatchback",
+      "description": "Chevrolet Corvette combines iconic design with track-ready performance, making every drive an exhilarating experience.",
+      "images": [
+        {
+          "url": "/images/cars/mg-zx-exclusice.png",
+          "alt": "meaningful alt text"
+        },
+        { "url": "/images/look-3.jpg", "alt": "meaningful alt text" }
+      ],
+      "price": 80.0,
+      "discountedPrice": 76.0,
+      "specifications": {
+        "mileage": 70,
+        "transmission": "Manual",
+        "capacity": 4
+      }
+    },
+    {
+      "id": "3",
+      "model": "Rolls - Royce",
+      "type": "Sedan",
+      "description": "AMG by Mercedes-Benz represents the pinnacle of luxury and performance, delivering an unmatched driving experience that leaves a lasting impression.",
+      "images": [
+        { "url": "/images/cars/rolls-royce.png", "alt": "meaningful alt text" },
+        { "url": "/images/look-3.jpg", "alt": "meaningful alt text" }
+      ],
+      "price": 96.0,
+      "specifications": {
+        "mileage": 70,
+        "transmission": "Manual",
+        "capacity": 4
+      }
+    },
+    {
+      "id": "10",
+      "model": "New MG ZS",
+      "type": "SUV",
+      "description": "Honda Type R offers a thrilling ride with uncompromising precision, creating a perfect balance between power, agility, and everyday usability.",
+      "images": [
+        { "url": "/images/cars/new-mg-zs.png", "alt": "meaningful alt text" },
+        { "url": "/images/look-3.jpg", "alt": "meaningful alt text" }
+      ],
+      "price": 80.0,
+      "specifications": {
+        "mileage": 80,
+        "transmission": "Manual",
+        "capacity": 6
+      }
+    },
+    {
+      "id": "4",
+      "model": "All New Rush",
+      "type": "SUV",
+      "description": "Audi RS is where engineering meets adrenaline, designed for those who crave intense performance and precise handling on every road.",
+      "images": [
+        {
+          "url": "/images/cars/all_new_rush.png",
+          "alt": "meaningful alt text"
+        },
+        { "url": "/images/look-3.jpg", "alt": "meaningful alt text" }
+      ],
+      "price": 80.0,
+      "discountedPrice": 72.0,
+      "specifications": {
+        "mileage": 70,
         "transmission": "Manual",
         "capacity": 6
       }
@@ -194,6 +284,54 @@
       "name": "Skylar Dias",
       "occupation": "CEO at Amazon",
       "avatarUrl": "/images/users/skylar-dias.png"
+    },
+    {
+      "id": "3",
+      "name": "Emma Green",
+      "occupation": "Lead Developer at Google",
+      "avatarUrl": "/images/users/emma-green.jpg"
+    },
+    {
+      "id": "4",
+      "name": "James Carter",
+      "occupation": "Product Manager at Microsoft",
+      "avatarUrl": "/images/users/james-carter.jpg"
+    },
+    {
+      "id": "5",
+      "name": "Olivia Brown",
+      "occupation": "UX Designer at Apple",
+      "avatarUrl": "/images/users/olivia-brown.jpg"
+    },
+    {
+      "id": "6",
+      "name": "Liam West",
+      "occupation": "Marketing Director at Tesla",
+      "avatarUrl": "/images/users/liam-west.jpg"
+    },
+    {
+      "id": "7",
+      "name": "Sophia Davis",
+      "occupation": "VP of Engineering at Spotify",
+      "avatarUrl": "/images/users/sophia-davis.jpg"
+    },
+    {
+      "id": "8",
+      "name": "Ava Roberts",
+      "occupation": "Chief Product Officer at Airbnb",
+      "avatarUrl": "/images/users/ava-roberts.jpg"
+    },
+    {
+      "id": "9",
+      "name": "Charlotte Harris",
+      "occupation": "Operations Manager at Facebook",
+      "avatarUrl": "/images/users/charlotte-harris.jpg"
+    },
+    {
+      "id": "10",
+      "name": "Ethan Mitchell",
+      "occupation": "Chief Technology Officer at Netflix",
+      "avatarUrl": "/images/users/ethan-mitchell.jpg"
     }
   ],
   "reviews": [
@@ -212,6 +350,54 @@
       "review": "We are greatly helped by the services of the MORENT Application. Morent has low prices and also a wide variety of cars with good and comfortable facilities. In addition, the service provided by the officers is also very friendly and very polite.",
       "rating": 4,
       "date": "20 July 2022"
+    },
+    {
+      "id": "3",
+      "carId": "2",
+      "userId": "3",
+      "review": "The car was in excellent condition, and the rental process was smooth and quick. The staff was incredibly helpful and made sure everything was perfect for my trip. Highly recommend!",
+      "rating": 5,
+      "date": "19 July 2022"
+    },
+    {
+      "id": "4",
+      "carId": "2",
+      "userId": "4",
+      "review": "Had a great experience using the MORENT App. The car was very clean and comfortable, and the staff was amazing. The whole process was simple, and I will definitely use this service again in the future.",
+      "rating": 4,
+      "date": "18 July 2022"
+    },
+    {
+      "id": "5",
+      "carId": "2",
+      "userId": "5",
+      "review": "Great rental experience! The car was just as described, and the booking process was seamless. However, I felt the price could be a little lower for the value. Otherwise, no complaints!",
+      "rating": 3,
+      "date": "17 July 2022"
+    },
+    {
+      "id": "6",
+      "carId": "2",
+      "userId": "6",
+      "review": "The car I rented was in great condition, and the staff was very friendly and efficient. I had a smooth experience overall. Would definitely consider using MORENT again!",
+      "rating": 4,
+      "date": "16 July 2022"
+    },
+    {
+      "id": "7",
+      "carId": "2",
+      "userId": "7",
+      "review": "The car was fine, but it had a slight odor, which I didn’t expect. Overall, though, the service was great, and the rental process was easy. I would still use the app again next time.",
+      "rating": 3,
+      "date": "15 July 2022"
+    },
+    {
+      "id": "8",
+      "carId": "2",
+      "userId": "8",
+      "review": "This was the best car rental experience I’ve had! The car was in perfect condition, and the staff made sure everything was taken care of. I’ll definitely be coming back for my future rentals.",
+      "rating": 5,
+      "date": "14 July 2022"
     }
   ],
   "carDescriptions": [
