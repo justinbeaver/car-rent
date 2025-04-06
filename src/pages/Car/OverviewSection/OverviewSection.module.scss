@@ -1,0 +1,118 @@
+$breakpoint: md;
+
+.overview {
+  display: grid;
+  row-gap: var(--sp-600);
+
+  @include above(#{$breakpoint}) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: var(--sp-600);
+  }
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  padding: var(--sp-400);
+  border-radius: var(--br-md);
+  background-color: var(--clr-primary-0);
+
+  @include above(#{$breakpoint}) {
+    padding: var(--sp-500);
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-block-end: var(--sp-400);
+
+  @include above(#{$breakpoint}) {
+    margin-block-end: var(--sp-600);
+  }
+}
+
+.heading {
+  color: var(--clr-secondary-500);
+  @include bold-500;
+
+  @include above(#{$breakpoint}) {
+    @include bold-700;
+  }
+}
+
+.description {
+  margin-block-end: var(--sp-400);
+  color: var(--clr-secondary-300);
+  @include regular-100;
+
+  @include above(#{$breakpoint}) {
+    margin-block-end: var(--sp-600);
+    @include regular-500;
+  }
+}
+
+.specifications {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: var(--sp-400);
+  row-gap: var(--sp-400);
+  margin-block-end: var(--sp-600);
+
+  @include above(#{$breakpoint}) {
+    column-gap: var(--sp-700);
+  }
+}
+
+.specification__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--sp-300);
+  color: var(--clr-secondary-300);
+  @include medium-100;
+
+  @include above(lg) {
+    @include medium-500;
+  }
+}
+
+.specifications__value {
+  color: var(--clr-secondary-500);
+  @include semibold-100;
+
+  @include above(lg) {
+    @include semibold-500;
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  column-gap: var(--sp-400);
+  margin-block-start: auto;
+}
+
+.cost {
+  color: var(--clr-secondary-300);
+  @include bold-100;
+
+  @include above(#{$breakpoint}) {
+    @include bold-300;
+  }
+}
+
+.price {
+  color: var(--clr-secondary-500);
+  @include bold-500;
+
+  @include above(#{$breakpoint}) {
+    @include bold-600;
+  }
+}
+
+.old-price {
+  text-decoration: line-through;
+}

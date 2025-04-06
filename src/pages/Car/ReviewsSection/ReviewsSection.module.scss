@@ -1,0 +1,41 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  padding: var(--sp-400);
+  border-radius: var(--br-md);
+  background-color: var(--clr-primary-0);
+
+  @include above(md) {
+    padding: var(--sp-500);
+  }
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  column-gap: var(--sp-300);
+  margin-block-end: var(--sp-500);
+  color: var(--clr-secondary-500);
+  @include semibold-500;
+
+  @include above(md) {
+    margin-block-end: var(--sp-600);
+  }
+}
+
+.reviews {
+  margin-block-end: var(--sp-500);
+}
+
+.show-button {
+  margin-inline: auto;
+}
+
+.no-reviews-message {
+  margin-block-end: var(--sp-500);
+  text-align: center;
+
+  @include above(md) {
+    margin-block-end: var(--sp-600);
+  }
+}
