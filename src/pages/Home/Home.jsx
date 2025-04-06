@@ -2,9 +2,9 @@ import { Wrapper } from "@/components/Wrapper/Wrapper";
 import { Spacer } from "@/components/Spacer/Spacer";
 import { useMediaQueriesContext } from "@/context/mediaQueriesContext";
 
-import { PopularCarSection } from "./PopularCarSection";
-import { RecommendationCarSection } from "./RecommendationCarSection";
-import { ShowMoreCarsSection } from "./ShowMoreCarsSection";
+import { PopularCarSection } from "./PopularCarSection/PopularCarSection";
+import { RecommendationCarSection } from "./RecommendationCarSection/RecommendationCarSection";
+import { ShowMoreCarsSection } from "./ShowMoreCarsSection/ShowMoreCarsSection";
 
 export const Home = () => {
   const { isMd } = useMediaQueriesContext();

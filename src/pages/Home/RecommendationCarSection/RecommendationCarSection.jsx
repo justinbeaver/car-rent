@@ -3,7 +3,6 @@ import { CarCard } from "@/components/CarCard/CarCard";
 import { useMediaQueriesContext } from "@/context/mediaQueriesContext";
 
 import { getRecommendedCars } from "./RecommendationCarSection.utils";
-
 import s from "./RecommendationCarSection.module.scss";
 
 export const RecommendationCarSection = () => {

@@ -6,7 +6,6 @@ import { CarCard } from "@/components/CarCard/CarCard";
 import { useMediaQueriesContext } from "@/context/mediaQueriesContext";
 
 import { getPopularCars } from "./PopularCarSection.utils";
-
 import s from "./PopularCarSection.module.scss";
 
 export const PopularCarSection = () => {

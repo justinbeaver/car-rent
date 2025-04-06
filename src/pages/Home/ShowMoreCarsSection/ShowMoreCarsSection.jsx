@@ -1,7 +1,6 @@
 import { Button } from "@/components/Button/Button";
 
 import { getTotalCarsCount } from "./ShowMoreCarsSection.utils";
-
 import s from "./ShowMoreCarsSection.module.scss";
 
 export const ShowMoreCarsSection = () => {
