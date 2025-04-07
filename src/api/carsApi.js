@@ -8,4 +8,7 @@ export const carsApi = {
 
   getPopular: ({ limit = 5 } = {}) =>
     api.get("/popular", { params: { _limit: limit } }),
+
+  getRecommended: ({ limit = 10 } = {}) =>
+    api.get("/recommended", { params: { _limit: limit } }),
 };
