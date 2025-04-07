@@ -1,8 +1,10 @@
 import { api } from "./apiClient";
 
 export const carsApi = {
-  getAll: ({ limit = 10 } = {}) =>
-    api.get("/cars", { params: { _limit: limit } }),
+  getAll: ({ limit = undefined, page = undefined, perPage = undefined } = {}) =>
+    api.get("/cars", {
+      params: { _limit: limit, _page: page, _per_page: perPage },
+    }),
 
   getById: (id) => api.get(`/cars/${id}`),
 
