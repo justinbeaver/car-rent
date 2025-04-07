@@ -266,6 +266,150 @@
       }
     }
   ],
+  "recommended": [
+    {
+      "id": "4",
+      "model": "All New Rush",
+      "type": "SUV",
+      "description": "Audi RS is where engineering meets adrenaline, designed for those who crave intense performance and precise handling on every road.",
+      "images": [
+        {
+          "url": "/images/cars/all_new_rush.png",
+          "alt": "meaningful alt text"
+        },
+        { "url": "/images/look-3.jpg", "alt": "meaningful alt text" }
+      ],
+      "price": 80.0,
+      "discountedPrice": 72.0,
+      "specifications": {
+        "mileage": 70,
+        "transmission": "Manual",
+        "capacity": 6
+      }
+    },
+    {
+      "id": "5",
+      "model": "CR - V",
+      "type": "SUV",
+      "description": "Subaru STI embodies a legacy of rally dominance, built for power, agility, and a thrilling ride on any terrain.",
+      "images": [
+        { "url": "/images/cars/cr-v.png", "alt": "meaningful alt text" },
+        { "url": "/images/look-3.jpg", "alt": "meaningful alt text" }
+      ],
+      "price": 80.0,
+      "specifications": {
+        "mileage": 80,
+        "transmission": "Manual",
+        "capacity": 6
+      }
+    },
+    {
+      "id": "6",
+      "model": "All New Terios",
+      "type": "SUV",
+      "description": "Ford Mustang GT delivers pure American muscle, with a growl that commands attention and performance that pushes the limits.",
+      "images": [
+        {
+          "url": "/images/cars/all-new-terios.png",
+          "alt": "meaningful alt text"
+        },
+        { "url": "/images/look-3.jpg", "alt": "meaningful alt text" }
+      ],
+      "price": 74.0,
+      "specifications": {
+        "mileage": 90,
+        "transmission": "Manual",
+        "capacity": 6
+      }
+    },
+    {
+      "id": "7",
+      "model": "MG ZX Exclusice",
+      "type": "Hatchback",
+      "description": "Chevrolet Corvette combines iconic design with track-ready performance, making every drive an exhilarating experience.",
+      "images": [
+        {
+          "url": "/images/cars/mg-zx-exclusice.png",
+          "alt": "meaningful alt text"
+        },
+        { "url": "/images/look-3.jpg", "alt": "meaningful alt text" }
+      ],
+      "price": 80.0,
+      "discountedPrice": 76.0,
+      "specifications": {
+        "mileage": 70,
+        "transmission": "Manual",
+        "capacity": 4
+      }
+    },
+    {
+      "id": "8",
+      "model": "New MG ZS",
+      "type": "SUV",
+      "description": "Porsche 911 Turbo blends speed, luxury, and style, a true performance icon that offers a driving experience like no other.",
+      "images": [
+        { "url": "/images/cars/new-mg-zs.png", "alt": "meaningful alt text" },
+        { "url": "/images/look-3.jpg", "alt": "meaningful alt text" }
+      ],
+      "price": 80.0,
+      "specifications": {
+        "mileage": 80,
+        "transmission": "Manual",
+        "capacity": 6
+      }
+    },
+    {
+      "id": "10",
+      "model": "New MG ZS",
+      "type": "SUV",
+      "description": "Honda Type R offers a thrilling ride with uncompromising precision, creating a perfect balance between power, agility, and everyday usability.",
+      "images": [
+        { "url": "/images/cars/new-mg-zs.png", "alt": "meaningful alt text" },
+        { "url": "/images/look-3.jpg", "alt": "meaningful alt text" }
+      ],
+      "price": 80.0,
+      "specifications": {
+        "mileage": 80,
+        "transmission": "Manual",
+        "capacity": 6
+      }
+    },
+    {
+      "id": "9",
+      "model": "MG ZX Excite",
+      "type": "Hatchback",
+      "description": "Lexus F Series cars are designed to deliver breathtaking performance while maintaining the luxury and refinement Lexus is known for.",
+      "images": [
+        {
+          "url": "/images/cars/mg-zx-excite.png",
+          "alt": "meaningful alt text"
+        },
+        { "url": "/images/look-3.jpg", "alt": "meaningful alt text" }
+      ],
+      "price": 74.0,
+      "specifications": {
+        "mileage": 90,
+        "transmission": "Manual",
+        "capacity": 4
+      }
+    },
+    {
+      "id": "3",
+      "model": "Rolls - Royce",
+      "type": "Sedan",
+      "description": "AMG by Mercedes-Benz represents the pinnacle of luxury and performance, delivering an unmatched driving experience that leaves a lasting impression.",
+      "images": [
+        { "url": "/images/cars/rolls-royce.png", "alt": "meaningful alt text" },
+        { "url": "/images/look-3.jpg", "alt": "meaningful alt text" }
+      ],
+      "price": 96.0,
+      "specifications": {
+        "mileage": 70,
+        "transmission": "Manual",
+        "capacity": 4
+      }
+    }
+  ],
   "carTypes": [
     { "id": "1", "type": "Sport" },
     { "id": "2", "type": "SUV" },
