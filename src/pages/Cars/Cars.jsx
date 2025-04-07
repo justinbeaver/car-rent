@@ -1,11 +1,20 @@
+import { useState } from "react";
+
 import { Wrapper } from "@/components/Wrapper/Wrapper";
 import { CarsGrid } from "@/components/CarsGrid/CarsGrid";
 import { CarCard } from "@/components/CarCard/CarCard";
-import { allCars } from "@/data/data";
+import { useAllCarsQuery } from "@/hooks/useAllCarsQuery";
 
 export const Cars = () => {
-  const cardsList = allCars.map(({ id, images, ...rest }) => (
-    <CarCard key={id} carId={id} imgUrl={images[0]} {...rest} />
+  const [page] = useState(1);
+
+  const { data, isLoading, isError, error } = useAllCarsQuery({
+    page,
+    perPage: 3,
+  });
+
+  const cardsList = data?.data.map(({ id, images, ...rest }) => (
+    <CarCard key={id} carId={id} imgUrl={images[0].url} {...rest} />
   ));
 
   return (
@@ -14,7 +23,11 @@ export const Cars = () => {
       <div>
         <Wrapper>
           <section>
-            <CarsGrid cardsList={cardsList} />
+            {isLoading && <p>Loading...</p>}
+
+            {isError && <p>{error.message}</p>}
+
+            {!isLoading && !isError && <CarsGrid cardsList={cardsList} />}
           </section>
         </Wrapper>
       </div>
