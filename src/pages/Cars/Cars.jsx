@@ -7,6 +7,7 @@ import { CarCard } from "@/components/CarCard/CarCard";
 import { Pagination } from "@/components/Pagination/Pagination";
 import { useAllCarsQuery } from "@/hooks/useAllCarsQuery";
 
+import { SearchFilters } from "./SearchFilters/SearchFilters";
 import s from "./Cars.module.scss";
 
 export const Cars = () => {
@@ -34,7 +35,7 @@ export const Cars = () => {
 
   return (
     <>
-      <aside></aside>
+      <SearchFilters />
       <div>
         <Wrapper>
           {/* TODO: should be a separate section component */}
