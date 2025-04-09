@@ -1,0 +1,30 @@
+.footer {
+  display: grid;
+
+  align-items: center;
+  row-gap: var(--sp-700);
+  padding-inline: var(--sp-400);
+
+  @include above(sm) {
+    grid-template-areas: "stack";
+  }
+}
+
+.pagination {
+  justify-self: center;
+
+  @include above(sm) {
+    grid-area: stack;
+  }
+}
+
+.total-cars-count {
+  justify-self: center;
+  color: var(--clr-secondary-300);
+  @include semibold-200;
+
+  @include above(sm) {
+    grid-area: stack;
+    justify-self: end;
+  }
+}
