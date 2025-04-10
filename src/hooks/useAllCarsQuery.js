@@ -1,13 +1,9 @@
 import { useQuery } from "@tanstack/react-query";
 import { carsApi } from "@/api/carsApi";
 
-export const useAllCarsQuery = ({
-  limit = undefined,
-  page = undefined,
-  perPage = undefined,
-} = {}) => {
+export const useAllCarsQuery = (params = {}) => {
   return useQuery({
-    queryKey: ["cars", "getAll", { limit, page, perPage }],
-    queryFn: () => carsApi.getAll({ limit, page, perPage }),
+    queryKey: ["cars", "getAll", params],
+    queryFn: () => carsApi.getAll(params),
   });
 };
