@@ -1,16 +1,74 @@
 import { api } from "./apiClient";
 
+const normalizePrefixedFilters = ({ key, values = [] }) => {
+  const prefixMap = {
+    gt_: "_gt",
+    gte_: "_gte",
+    lt_: "_lt",
+    lte_: "_lte",
+    ne_: "_ne",
+  };
+
+  const prefixEntries = Object.entries(prefixMap);
+
+  const params = {};
+
+  values.forEach((value) => {
+    if (!isNaN(parseInt(value))) {
+      params[key] = params[key] || [];
+      params[key].push(parseInt(value));
+    } else {
+      for (const [prefix, suffix] of prefixEntries) {
+        if (value.startsWith(prefix)) {
+          const numValue = parseInt(value.replace(prefix, ""));
+          if (!isNaN(numValue)) {
+            params[`${key}${suffix}`] = numValue;
+          }
+          break;
+        }
+      }
+    }
+  });
+
+  return params;
+};
+
+const getAll = ({ limit, page, perPage, type, capacity } = {}) => {
+  const capacityFilters = normalizePrefixedFilters({
+    key: "specifications.capacity",
+    values: capacity,
+  });
+
+  const params = {
+    _limit: limit,
+    _page: page,
+    _per_page: perPage,
+    type,
+    ...capacityFilters,
+  };
+
+  return api.get("/cars", { params });
+};
+
+const getById = (id) => {
+  return api.get(`/cars/${id}`);
+};
+
+const getPopular = ({ limit } = {}) => {
+  const params = { _limit: limit };
+
+  return api.get("/popular", { params });
+};
+
+const getRecommended = ({ limit } = {}) => {
+  const params = { _limit: limit };
+
+  return api.get("/recommended", { params });
+};
+
 export const carsApi = {
-  getAll: ({ limit = undefined, page = undefined, perPage = undefined } = {}) =>
-    api.get("/cars", {
-      params: { _limit: limit, _page: page, _per_page: perPage },
-    }),
-
-  getById: (id) => api.get(`/cars/${id}`),
-
-  getPopular: ({ limit = 5 } = {}) =>
-    api.get("/popular", { params: { _limit: limit } }),
-
-  getRecommended: ({ limit = 10 } = {}) =>
-    api.get("/recommended", { params: { _limit: limit } }),
+  getAll,
+  getById,
+  getPopular,
+  getRecommended,
 };
