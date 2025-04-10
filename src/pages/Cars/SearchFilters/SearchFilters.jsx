@@ -13,7 +13,7 @@ const filters = {
     { label: "2 Person", name: "capacity", value: "2", count: 10 },
     { label: "4 Person", name: "capacity", value: "4", count: 14 },
     { label: "6 Person", name: "capacity", value: "6", count: 12 },
-    { label: "8 or More", name: "capacity", value: "8+", count: 16 },
+    { label: "8 or More", name: "capacity", value: "gte_8", count: 16 },
   ],
 };
 
