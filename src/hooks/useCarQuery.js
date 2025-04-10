@@ -5,6 +5,6 @@ import { carsApi } from "@/api/carsApi";
 export const useCarQuery = (carId) => {
   return useQuery({
     queryKey: ["cars", "getById", carId],
-    queryFn: () => carsApi.getById(carId),
+    queryFn: () => carsApi.getById({ id: carId }),
   });
 };

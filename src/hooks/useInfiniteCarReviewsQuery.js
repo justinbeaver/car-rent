@@ -17,7 +17,7 @@ export const useInfiniteCarReviewsQuery = (
   } = useInfiniteQuery({
     queryKey: ["reviews", "infinite", carId, page, perPage],
     queryFn: ({ pageParam }) =>
-      reviewsApi.getByCarId(carId, { page: pageParam, perPage }),
+      reviewsApi.getByCarId({ carId, page: pageParam, perPage }),
     initialPageParam: page,
     getNextPageParam: (lastPage) => lastPage.next,
   });
