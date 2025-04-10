@@ -13,13 +13,17 @@ import s from "./Cars.module.scss";
 export const Cars = () => {
   const [searchParams] = useSearchParams();
   const page = parseInt(searchParams.get("page")) || 1;
+  const type = searchParams.getAll("type");
+  const capacity = searchParams.getAll("capacity");
 
   const { data, isLoading, isError, error } = useAllCarsQuery({
     page,
     perPage: 3,
+    type,
+    capacity,
   });
 
-  const { last, items: totalCarsCount, data: cars } = data || {};
+  const { last, items: filteredCarsCount, data: cars } = data || {};
 
   const cardsList =
     cars?.map(({ id, images, ...rest }) => (
@@ -58,7 +62,7 @@ export const Cars = () => {
                   <p className={s["total-cars-count"]}>
                     {/* TODO: make a separate total cars component with api call */}
                     <span className="visually-hidden">Total cars: </span>
-                    <span>{`${totalCarsCount} Car`}</span>
+                    <span>{`${filteredCarsCount} Car`}</span>
                   </p>
                 </div>
                 <Spacer size="950" />
