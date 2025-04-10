@@ -12,17 +12,18 @@ import s from "./Cars.module.scss";
 
 export const Cars = () => {
   const [searchParams] = useSearchParams();
+
+  const perPage = 3;
   const page = parseInt(searchParams.get("page")) || 1;
   const type = searchParams.getAll("type");
   const capacity = searchParams.getAll("capacity");
 
   const { data, isLoading, isError, error } = useAllCarsQuery({
+    perPage,
     page,
-    perPage: 3,
     type,
     capacity,
   });
-
   const { last, items: filteredCarsCount, data: cars } = data || {};
 
   const cardsList =
