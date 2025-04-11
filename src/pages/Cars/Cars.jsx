@@ -51,7 +51,10 @@ export const Cars = () => {
 
             {!isLoading && !isError && (
               <>
-                <CarsGrid cardsList={cardsList} />
+                {filteredCarsCount == 0 && <p>No cars with these filters</p>}
+
+                {filteredCarsCount > 0 && <CarsGrid cardsList={cardsList} />}
+
                 <Spacer size="950" />
                 <div className={s.footer}>
                   <Pagination
