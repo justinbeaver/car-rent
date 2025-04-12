@@ -1,5 +1,7 @@
 import { useSearchParams } from "react-router-dom";
 
+import { formatPrice } from "@/utils/formatters";
+
 const filters = {
   type: [
     { label: "Sport", name: "type", value: "Sport", count: 10 },
@@ -20,6 +22,10 @@ const filters = {
 export const SearchFilters = () => {
   const [searchParams, setSearchParams] = useSearchParams();
 
+  const price = searchParams.get("price")
+    ? searchParams.get("price").replace("lte_", "")
+    : "100";
+
   const toggleUrlParam = (name, value) => {
     const newSearchParams = new URLSearchParams(searchParams);
 
@@ -28,6 +34,14 @@ export const SearchFilters = () => {
     } else {
       newSearchParams.append(name, value);
     }
+
+    setSearchParams(newSearchParams);
+  };
+
+  const setUrlParam = (name, value) => {
+    const newSearchParams = new URLSearchParams(searchParams);
+
+    newSearchParams.set(name, value);
 
     setSearchParams(newSearchParams);
   };
@@ -67,6 +81,19 @@ export const SearchFilters = () => {
           </li>
         ))}
       </ul>
+      <p>Price</p>
+      <input
+        id="price-max"
+        type="range"
+        name="price"
+        min="50"
+        max="155"
+        value={price}
+        onChange={(e) => {
+          setUrlParam(e.target.name, `lte_${e.target.value}`);
+        }}
+      />
+      <label htmlFor="price-max">{`Max. ${formatPrice(price)}`}</label>
     </aside>
   );
 };
