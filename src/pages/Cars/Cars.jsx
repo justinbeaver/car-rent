@@ -17,12 +17,14 @@ export const Cars = () => {
   const page = parseInt(searchParams.get("page")) || 1;
   const type = searchParams.getAll("type");
   const capacity = searchParams.getAll("capacity");
+  const price = searchParams.get("price");
 
   const { data, isLoading, isError, error } = useAllCarsQuery({
     perPage,
     page,
     type,
     capacity,
+    price,
   });
   const { last, items: filteredCarsCount, data: cars } = data || {};
 
