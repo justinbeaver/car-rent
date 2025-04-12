@@ -2,6 +2,8 @@ import { useSearchParams } from "react-router-dom";
 
 import { formatPrice } from "@/utils/formatters";
 
+import s from "./SearchFilters.module.scss";
+
 const filters = {
   type: [
     { label: "Sport", name: "type", value: "Sport", count: 10 },
@@ -47,12 +49,11 @@ export const SearchFilters = () => {
   };
 
   return (
-    <aside>
-      SearchFilters
-      <p>Type</p>
-      <ul>
+    <aside className={s["search-filters"]}>
+      <p className={s["category-label"]}>Type</p>
+      <ul className={s["filters-list"]}>
         {filters.type.map(({ label, name, value, count }) => (
-          <li key={value}>
+          <li key={value} className={s["filters-list__item"]}>
             <input
               id={`${name}-${value}`}
               type="checkbox"
@@ -61,14 +62,17 @@ export const SearchFilters = () => {
               checked={searchParams.has(name, value)}
               onChange={(e) => toggleUrlParam(e.target.name, e.target.value)}
             />
-            <label htmlFor={`${name}-${value}`}>{`${label} (${count})`}</label>
+            <label
+              className={s["input-label"]}
+              htmlFor={`${name}-${value}`}
+            >{`${label} (${count})`}</label>
           </li>
         ))}
       </ul>
-      <p>Capacity</p>
-      <ul>
+      <p className={s["category-label"]}>Capacity</p>
+      <ul className={s["filters-list"]}>
         {filters.capacity.map(({ label, name, value, count }) => (
-          <li key={value}>
+          <li key={value} className={s["filters-list__item"]}>
             <input
               id={`${name}-${label}`}
               type="checkbox"
@@ -77,13 +81,17 @@ export const SearchFilters = () => {
               checked={searchParams.has(name, value)}
               onChange={(e) => toggleUrlParam(e.target.name, e.target.value)}
             />
-            <label htmlFor={`${name}-${label}`}>{`${label} (${count})`}</label>
+            <label
+              className={s["input-label"]}
+              htmlFor={`${name}-${label}`}
+            >{`${label} (${count})`}</label>
           </li>
         ))}
       </ul>
-      <p>Price</p>
+      <p className={s["category-label"]}>Price</p>
       <input
         id="price-max"
+        className={s["price-input"]}
         type="range"
         name="price"
         min="50"
@@ -93,7 +101,10 @@ export const SearchFilters = () => {
           setUrlParam(e.target.name, `lte_${e.target.value}`);
         }}
       />
-      <label htmlFor="price-max">{`Max. ${formatPrice(price)}`}</label>
+      <label
+        className={s["input-label"]}
+        htmlFor="price-max"
+      >{`Max. ${formatPrice(price)}`}</label>
     </aside>
   );
 };
