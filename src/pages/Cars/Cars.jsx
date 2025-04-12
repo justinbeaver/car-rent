@@ -41,42 +41,35 @@ export const Cars = () => {
   };
 
   return (
-    <>
-      <SearchFilters />
-      <div>
-        <Wrapper>
-          {/* TODO: should be a separate section component */}
-          <section>
-            {isLoading && <p>Loading...</p>}
-
-            {isError && <p>{error.message}</p>}
-
-            {!isLoading && !isError && (
-              <>
-                {filteredCarsCount == 0 && <p>No cars with these filters</p>}
-
-                {filteredCarsCount > 0 && <CarsGrid cardsList={cardsList} />}
-
-                <Spacer size="950" />
-                <div className={s.footer}>
-                  <Pagination
-                    className={s.pagination}
-                    current={page}
-                    last={last}
-                    generateLinkForPage={generateLinkForPage}
-                  />
-                  <p className={s["total-cars-count"]}>
-                    {/* TODO: make a separate total cars component with api call */}
-                    <span className="visually-hidden">Total cars: </span>
-                    <span>{`${filteredCarsCount} Car`}</span>
-                  </p>
-                </div>
-                <Spacer size="950" />
-              </>
-            )}
-          </section>
-        </Wrapper>
+    <Wrapper size="lg" pad="none">
+      <div className={s["page-layout"]}>
+        <SearchFilters />
+        {/* TODO: should be a separate section component */}
+        <section className={s.section}>
+          {isLoading && <p>Loading...</p>}
+          {isError && <p>{error.message}</p>}
+          {!isLoading && !isError && (
+            <>
+              {filteredCarsCount == 0 && <p>No cars with these filters</p>}
+              {filteredCarsCount > 0 && <CarsGrid cardsList={cardsList} />}
+              <Spacer size="950" />
+              <div className={s.footer}>
+                <Pagination
+                  className={s.pagination}
+                  current={page}
+                  last={last}
+                  generateLinkForPage={generateLinkForPage}
+                />
+                <p className={s["total-cars-count"]}>
+                  {/* TODO: make a separate total cars component with api call? */}
+                  <span className="visually-hidden">Total cars: </span>
+                  <span>{`${filteredCarsCount} Car`}</span>
+                </p>
+              </div>
+            </>
+          )}
+        </section>
       </div>
-    </>
+    </Wrapper>
   );
 };
