@@ -1,11 +1,12 @@
 export const getAdjacentPages = ({ current, last, adjacent = 1 }) => {
-  if (current > last) {
-    console.warn("Current page must be less than last page");
-  }
-
   const pages = [];
 
   pages.push(current);
+
+  if (current > last) {
+    // console.warn("Current page must be less than last page");
+    return pages;
+  }
 
   for (let i = 1; i <= adjacent; i++) {
     if (current - i >= 1) {
