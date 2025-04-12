@@ -1,9 +1,21 @@
+.page-layout {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  padding-block-start: var(--sp-600);
+  padding-block-end: var(--sp-950);
+  padding-inline: var(--sp-600);
+}
+
 .footer {
   display: grid;
-
   align-items: center;
   row-gap: var(--sp-700);
-  padding-inline: var(--sp-400);
+  margin-block-start: auto;
 
   @include above(sm) {
     grid-template-areas: "stack";
