@@ -1,6 +1,6 @@
 import { api } from "@/api/apiClient";
 
-const normalizePrefixedFilters = ({ key, values = [] }) => {
+const normalizeComparisonFilters = ({ key, values = [] }) => {
   const prefixMap = {
     gt_: "_gt",
     gte_: "_gte",
@@ -10,10 +10,15 @@ const normalizePrefixedFilters = ({ key, values = [] }) => {
   };
 
   const prefixEntries = Object.entries(prefixMap);
+  const processedValues = Array.isArray(values) ? values : [values];
 
   const params = {};
 
-  values.forEach((value) => {
+  processedValues.forEach((value) => {
+    if (typeof value !== "string") {
+      return;
+    }
+
     if (!isNaN(parseInt(value))) {
       params[key] = params[key] || [];
       params[key].push(parseInt(value));
@@ -33,10 +38,21 @@ const normalizePrefixedFilters = ({ key, values = [] }) => {
   return params;
 };
 
-export const getAll = ({ limit, page, perPage, type, capacity } = {}) => {
-  const capacityFilters = normalizePrefixedFilters({
+export const getAll = ({
+  limit,
+  page,
+  perPage,
+  type,
+  capacity,
+  price,
+} = {}) => {
+  const capacityFilters = normalizeComparisonFilters({
     key: "specifications.capacity",
     values: capacity,
+  });
+  const priceFilters = normalizeComparisonFilters({
+    key: "price",
+    values: price,
   });
 
   const params = {
@@ -45,6 +61,7 @@ export const getAll = ({ limit, page, perPage, type, capacity } = {}) => {
     _per_page: perPage,
     type,
     ...capacityFilters,
+    ...priceFilters,
   };
 
   return api.get("/cars", { params });
