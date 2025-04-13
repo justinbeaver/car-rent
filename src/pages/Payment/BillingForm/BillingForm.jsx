@@ -1,4 +1,5 @@
 import { BillingInfo } from "./BillingInfo/BillingInfo";
+import { PaymentMethod } from "./PaymentMethod/PaymentMethod";
 import { RentalInfo } from "./RentalInfo/RentalInfo";
 
 export const BillingForm = () => {
@@ -6,6 +7,7 @@ export const BillingForm = () => {
     <form>
       <BillingInfo />
       <RentalInfo />
+      <PaymentMethod />
     </form>
   );
 };
