@@ -47,7 +47,16 @@
   }
 }
 
-.subcategory-heading {
+.fieldset {
+  // all: unset;
+  border: none;
+}
+
+.legend {
+  // display: contents;
+  // all: unset;
+  // float: left;
+  // width: 100%;
   margin-block-end: var(--sp-400);
   color: var(--clr-secondary-500);
   @include semibold-400;
