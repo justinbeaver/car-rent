@@ -5,14 +5,22 @@
 
   @include above(md) {
     grid-template-columns: 1.7fr 1fr;
-    align-items: start;
+  }
+}
 
-    > *:nth-child(1) {
-      order: 2;
-    }
+.rental-summary-column {
+  @include above(md) {
+    order: 2;
 
-    > *:nth-child(2) {
-      order: 1;
+    > * {
+      position: sticky;
+      top: 0px;
     }
+  }
+}
+
+.billing-form-column {
+  @include above(md) {
+    order: 1;
   }
 }
