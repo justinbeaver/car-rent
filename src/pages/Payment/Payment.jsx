@@ -10,8 +10,12 @@ export const Payment = () => {
     <Wrapper size="lg" pad="lg">
       <Spacer size="600" />
       <div className={s.content}>
-        <RentalSummary />
-        <BillingForm />
+        <div className={s["rental-summary-column"]}>
+          <RentalSummary />
+        </div>
+        <div className={s["billing-form-column"]}>
+          <BillingForm />
+        </div>
       </div>
       <Spacer size="600" />
     </Wrapper>
