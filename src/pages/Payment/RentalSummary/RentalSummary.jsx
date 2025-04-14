@@ -1,46 +1,69 @@
+import { Button } from "@/components/Button/Button";
+import carImg from "/images/look-3.jpg";
+
+import s from "./RentalSummary.module.scss";
+
 export const RentalSummary = () => {
   return (
-    <section>
+    <section className={s.section}>
       <header>
-        <h2>Rental Summary</h2>
-        <p>
+        <h2 className={s.heading}>Rental Summary</h2>
+        <p className={s.subheading}>
           Prices may change depending on the length of the rental and the price
           of your rental car.
         </p>
       </header>
-      <div>
+
+      <div className={s.overview}>
         <div>
-          <img src="" alt="" />
+          <img
+            className={s["car-img"]}
+            src={carImg}
+            alt="picture of the selected car"
+          />
         </div>
-        <p>Nissan GT-R</p>
+        <div>
+          <p className={s["car-name"]}>Nissan GT-R</p>
+          <p>review</p>
+        </div>
       </div>
-      <div>
-        <p>
-          <span>Subtotal</span>
-          <span>$80.00</span>
-        </p>
-        <p>
-          <span>Tax</span>
-          <span>$0</span>
-        </p>
-      </div>
-      <div>
+
+      <hr />
+
+      <dl className={s.dl} aria-label="price breakdown">
+        <div className={s["dl__item"]}>
+          <dt className={s["dl__dt"]}>Subtotal </dt>
+          <dd className={s["dl__dd"]}>$80.00</dd>
+        </div>
+        <div className={s["dl__item"]}>
+          <dt className={s["dl__dt"]}>Tax</dt>
+          <dd className={s["dl__dd"]}>$0</dd>
+        </div>
+      </dl>
+
+      <div className={s["input-group"]}>
         <label className="visually-hidden" htmlFor="promo-code-input">
-          Promo code:
+          Use promo code:
         </label>
         <input
           id="promo-code-input"
+          className={s["text-input"]}
           type="text"
           placeholder="Apply promo code"
         />
-        <button>Apply now</button>
+        <Button className={s["input-button"]} variant="primary" size="sm">
+          Apply now
+        </Button>
       </div>
-      <footer>
+
+      <footer className={s.footer}>
         <div>
-          <p>Total Rental Price</p>
-          <p>Overall price and includes rental discount</p>
+          <p className={s["footer__heading"]}>Total Rental Price</p>
+          <p className={s["footer__subheading"]}>
+            Overall price and includes rental discount
+          </p>
         </div>
-        <p>$80.00</p>
+        <p className={s["footer__price"]}>$80.00</p>
       </footer>
     </section>
   );
