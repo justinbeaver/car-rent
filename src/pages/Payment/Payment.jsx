@@ -7,15 +7,13 @@ import s from "./Payment.module.scss";
 
 export const Payment = () => {
   return (
-    <>
-      <Wrapper>
-        <Spacer size="600" />
-        <div className={s.content}>
-          <RentalSummary />
-          <BillingForm />
-        </div>
-        <Spacer size="600" />
-      </Wrapper>
-    </>
+    <Wrapper size="lg" pad="lg">
+      <Spacer size="600" />
+      <div className={s.content}>
+        <RentalSummary />
+        <BillingForm />
+      </div>
+      <Spacer size="600" />
+    </Wrapper>
   );
 };
