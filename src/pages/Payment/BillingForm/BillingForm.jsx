@@ -1,6 +1,7 @@
 import { BillingInfo } from "./BillingInfo/BillingInfo";
-import { PaymentMethod } from "./PaymentMethod/PaymentMethod";
 import { RentalInfo } from "./RentalInfo/RentalInfo";
+import { PaymentMethod } from "./PaymentMethod/PaymentMethod";
+import { Confirmation } from "./Confirmation/Confirmation";
 
 export const BillingForm = () => {
   return (
@@ -8,6 +9,7 @@ export const BillingForm = () => {
       <BillingInfo />
       <RentalInfo />
       <PaymentMethod />
+      <Confirmation />
     </form>
   );
 };
