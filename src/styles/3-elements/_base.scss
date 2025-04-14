@@ -16,3 +16,10 @@ body {
   font-weight: var(--fw-regular);
   line-height: var(--lh-base);
 }
+
+hr {
+  border-width: var(--bw-thin);
+  border-style: var(--bs-base);
+  border-color: hsl(from var(--bc-light) h s l / 40%);
+  border-bottom-width: 0px;
+}
